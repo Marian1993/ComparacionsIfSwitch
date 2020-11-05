@@ -37,6 +37,9 @@ public class Main {
         //deberes1.Ejercicio11Bucles();
         //Bucles.Ejercicio12Bucles();
         //Bucles.Ejercicio1Extra();
+        //Bucles.Ejercicio2Extra();
+        //Bucles.Ejercicio3Extra();
+        Bucles.Ejercicio4Extra();
     }
 }
 

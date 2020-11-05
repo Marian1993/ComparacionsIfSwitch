@@ -276,5 +276,64 @@ public class Bucles {
         }
         System.out.println(fraseInvertida);
     }
+    public static void Ejercicio2Extra(){
+
+        Scanner in=new Scanner(System.in);
+        System.out.println("Pon una palabra:");
+        String valor = in.nextLine();
+
+        valor=valor.replace(" ","");
+        valor=valor.replace(",","");
+        valor=valor.replace(".","");
+
+
+        int fin=valor.length()-1;
+        int inicio=0;
+        boolean palindromo=true;
+
+        while(inicio<fin){
+
+            if(valor.charAt(inicio)!= valor.charAt(fin)){
+                palindromo=false;
+            }
+            inicio++;
+            fin--;
+        }
+        if(palindromo) {
+            System.out.println("la palabra: " + valor + " es un palindromo");
+
+        }else{
+            System.out.println("la palabra: " + valor + " no es un palindromo");
+
+        }
+
+    }
+    public static void Ejercicio3Extra(){
+
+        Scanner in= new Scanner(System.in);
+        System.out.println("Escribre una frase o nombre:");
+        String nombre= in.nextLine();
+
+        nombre=nombre.replace(" ","");
+        nombre=nombre.replace(",","");
+        nombre=nombre.replace(".","");
+
+        System.out.println("Esta frase o nombre tiene una longitud de "+nombre.length()+" letras.");
+    }
+    public static void Ejercicio4Extra(){
+
+        Scanner in= new Scanner(System.in);
+        System.out.println("Escribre una frase o nombre:");
+        String nombre= in.nextLine();
+        char caracter = 0;
+
+        for( int i=0;i<nombre.length();i++){
+
+            caracter=nombre.charAt('a');
+            caracter++;
+        }
+        System.out.println("En la frase o el nobre, aparece la letra A "+caracter+" veces.");
+
+    }
 
 }
