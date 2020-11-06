@@ -279,13 +279,12 @@ public class Bucles {
     public static void Ejercicio2Extra(){
 
         Scanner in=new Scanner(System.in);
-        System.out.println("Pon una palabra:");
+        System.out.println("Pon una palabra o frase:");
         String valor = in.nextLine();
 
         valor=valor.replace(" ","");
         valor=valor.replace(",","");
         valor=valor.replace(".","");
-
 
         int fin=valor.length()-1;
         int inicio=0;
