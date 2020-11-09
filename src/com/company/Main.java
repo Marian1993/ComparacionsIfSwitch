@@ -41,10 +41,14 @@ public class Main {
         //Bucles.Ejercicio3Extra();
         //terminar Bucles.Ejercicio4Extra();
 
-        //Arrays.Ejercicio1AArrays();
-        //Arrays.Ejercicio1BArrays();
-        //Arrays.Ejercicio2Arrays();
-        Arrays.Ejercicio3Arrays();
+        //ExArrays.Ejercicio1AArrays();
+        //ExArrays.Ejercicio1BArrays();
+        //ExArrays.Ejercicio2Arrays();
+        //ExArrays.Ejercicio3Arrays();
+        //ExArrays.Ejercicio4Arrays();
+        //ExArrays.Ejercicio5Arrays();
+        //Preguntar ExArrays.Ejercicio6Arrays();
+        ExArrays.Ejercicio7Arrays();
     }
 }
 
