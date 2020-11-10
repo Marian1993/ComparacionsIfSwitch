@@ -47,8 +47,10 @@ public class Main {
         //ExArrays.Ejercicio3Arrays();
         //ExArrays.Ejercicio4Arrays();
         //ExArrays.Ejercicio5Arrays();
-        //Preguntar ExArrays.Ejercicio6Arrays();
-        ExArrays.Ejercicio7Arrays();
+        //ExArrays.Ejercicio6Arrays();
+        //ExArrays.Ejercicio7Arrays();
+        //ExArrays.Ejercicio8Arrays();
+        ExArrays.Ejercicio9Arrays();
     }
 }
 

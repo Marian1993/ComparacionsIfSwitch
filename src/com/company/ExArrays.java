@@ -89,45 +89,73 @@ public class ExArrays {
     public static void Ejercicio6Arrays() {
         Scanner in = new Scanner(System.in);
         int[] num = {1,2,3,4,5,6};
-        System.out.println("Los números que se han puesto han sido:"+num[0]+", "+num[1]+", "+num[2]+
-                ", "+num[3]+", "+num[4]+", "+num[5]+".");
 
+        for(int i=0;i<num.length;i++){
 
-        /*ArrayList todos= new ArrayList();
-        todos.add(num);
-
-        for(int i=0;i<5;i++){
-         num[i]=in.nextInt();
+            System.out.println(num[i]);
         }
-        //System.out.println("Los números que se han puesto han sido:"+num[0]+","+num[1]+","+num[2]+
-        ","+num[3]+","+num[4]+","+num[5]+".");
-        System.out.println("Los números que se han puesto han sido: "+todos);*/
+
     }
     public static void Ejercicio7Arrays(){
 
         Scanner in=new Scanner(System.in);
         int [] num= new int [4];
         int sum=0;
-        int veces=0;
 
         for(int i=0;i<4;i++){
 
             num[i]= in.nextInt();
             sum+=num[i];
-            veces++;
 
         }
-        System.out.println("La mitjana de tots els números es: "+(double)sum/veces);
+        System.out.println("La mitjana de tots els números es: "+(double)sum/num.length);
     }
     public static void Ejercicio8Arrays(){
 
         int [] a= {1,3,5};
         int [] b= {2,4,6};
-        int [] c=new int[6];
+        ArrayList all =new ArrayList();
+        int longitudMaxima= a.length>=b.length? a.length:b.length;
 
-        for (int i=0;i<6;i++){
+        for (int i=0;i<longitudMaxima;i++){
 
+            if (i<a.length){
 
+                all.add(a[i]);
+            }
+            if(i<b.length){
+
+                all.add(b[i]);
+            }
+
+        }
+        System.out.println(all);
+    }
+    public static void Ejercicio9Arrays(){
+
+        int [] num={1,2,3,4,5,6};
+        boolean creciente, decreciente;
+        creciente=false;
+        decreciente=false;
+
+        for( int i=0; i<num.length-1;i++){
+            if(num[i]>num[i+1]){
+                decreciente=true;
+            }if(num[i]<num[i+1]){
+                creciente=true;
+            }
+        }
+        if(creciente==true && decreciente==false){
+            System.out.println("Está ordenado de forma creciente");
+        }
+        else if(creciente==false && decreciente==true) {
+            System.out.println("Está ordenado de forma decreciente");
+        }
+        else if(creciente==true && decreciente==true) {
+            System.out.println("Está ordenado de forma desordenada");
+        }
+        else if(creciente==false && decreciente==false) {
+            System.out.println("Todos los números se repiten");
         }
     }
 }
