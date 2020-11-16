@@ -190,6 +190,7 @@ public class ExArrays {
         in=new Scanner(System.in);
         char [] charArray= new char[6];
         int contador=0;
+        boolean salida;
         for( int i=0; i<charArray.length;i++){
             charArray[i]=in.nextLine().toCharArray()[0];
         }
