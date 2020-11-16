@@ -8,6 +8,8 @@ import java.util.Scanner;
 
 public class ExArrays {
 
+    private static Scanner in;
+
     public static void Ejercicio1AArrays(){
 
         int [] num= new int[4];
@@ -34,7 +36,7 @@ public class ExArrays {
     }
     public static void Ejercicio2Arrays(){
 
-        Scanner in=new Scanner(System.in);
+        in=new Scanner(System.in);
         int [] num= new int[4];
         ArrayList numeros= new ArrayList();
 
@@ -79,12 +81,6 @@ public class ExArrays {
         //String frase= Arrays.toString(caracter);
         System.out.println(caracter);
 
-
-        /*for(int i=0;i<10;i++){
-
-            caracter[i]=(char)in.nextLine().toCharArray()[0];
-        }
-        System.out.println(caracter);*/
     }
     public static void Ejercicio6Arrays() {
         Scanner in = new Scanner(System.in);
@@ -94,7 +90,6 @@ public class ExArrays {
 
             System.out.println(num[i]);
         }
-
     }
     public static void Ejercicio7Arrays(){
 
@@ -133,7 +128,7 @@ public class ExArrays {
     }
     public static void Ejercicio9Arrays(){
 
-        int [] num={1,2,3,4,5,6};
+        int [] num={1,2,1,4,3,6};
         boolean creciente, decreciente;
         creciente=false;
         decreciente=false;
@@ -152,10 +147,85 @@ public class ExArrays {
             System.out.println("Está ordenado de forma decreciente");
         }
         else if(creciente==true && decreciente==true) {
-            System.out.println("Está ordenado de forma desordenada");
+            System.out.println("Está de forma desordenada");
         }
         else if(creciente==false && decreciente==false) {
             System.out.println("Todos los números se repiten");
         }
+    }
+    public static void Ejercicio10Arrays(){
+
+        Scanner in=new Scanner(System.in);
+        ArrayList<Integer> positiu = new ArrayList<Integer>();
+        ArrayList<Integer> negatiu = new ArrayList<Integer>();
+        int num;
+        while (!((num=in.nextInt())==0)){
+
+            if (num > 0) {
+                positiu.add(num);
+            }  else if(num < 0) {
+                negatiu.add(num);
+            }
+        }
+        System.out.println("Los numeros de la ArrayList positivos són: "+positiu+
+                "\nLos números de la ArrayList negativos són: "+negatiu);
+    }
+    public static void Ejercicio11Arrays(){
+
+      in=new Scanner(System.in);
+      char [] charArray= new char[6];
+      int contador=0;
+      for( int i=0; i<charArray.length;i++){
+          charArray[i]=in.nextLine().toCharArray()[0];
+      }
+      for( int i=0;i<charArray.length;i++){
+
+          if(charArray[i]=='a'){
+              contador++;
+          }
+      }
+      System.out.println("Quan de pics ha aparescut la lletra a: "+contador);
+    }
+    public static void  Ejercicio12Arrays(){
+        in=new Scanner(System.in);
+        char [] charArray= new char[6];
+        int contador=0;
+        for( int i=0; i<charArray.length;i++){
+            charArray[i]=in.nextLine().toCharArray()[0];
+        }
+        for( int i=0;i<charArray.length;i++){
+
+            if(charArray[i]=='a'){
+                contador++;
+            }
+        }
+        System.out.println("Quan de pics ha aparescut la lletra a: "+contador);
+
+    }
+    public static void  Ejercicio13Arrays(){
+
+        in=new Scanner(System.in);
+        int [] arrayRandom=new int[6];
+        int num;
+
+
+        for(int i=0;i<arrayRandom.length;i++){
+
+            arrayRandom[i]=(int) (Math.random()*20);
+        }
+        System.out.println("Posa un número y et diré si està a s'array o no.");
+        for(int i=0;i<arrayRandom.length;i++){
+
+            System.out.println(arrayRandom[i]);
+        }
+        num= in.nextInt();
+        for (int i=0;i<arrayRandom.length;i++){
+            if(arrayRandom[i]==num){
+                System.out.println("El número està dins l'array.");
+            }else{
+                System.out.println("El número no està dins l'array.");
+            }
+        }
+
     }
 }

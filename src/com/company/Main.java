@@ -50,7 +50,10 @@ public class Main {
         //ExArrays.Ejercicio6Arrays();
         //ExArrays.Ejercicio7Arrays();
         //ExArrays.Ejercicio8Arrays();
-        ExArrays.Ejercicio9Arrays();
+        //ExArrays.Ejercicio9Arrays();
+        //ExArrays.Ejercicio10Arrays();
+        //ExArrays.Ejercicio11Arrays();
+        ExArrays.Ejercicio12Arrays();
     }
 }
 

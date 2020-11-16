@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Bucles {
 
+
     public void Ejercicio1Bucles() {
 
         Scanner in = new Scanner(System.in);
