@@ -323,14 +323,15 @@ public class Bucles {
     public static void Ejercicio4Extra(){
 
         Scanner in= new Scanner(System.in);
-        System.out.println("Escribre una frase o nombre:");
-        String nombre= in.nextLine();
+        System.out.println("Escriu 6 lletres");
+        char[] letras= new char[6];
         char caracter = 0;
 
-        for( int i=0;i<nombre.length();i++){
-
-            caracter=nombre.charAt('a');
-            caracter++;
+        for( int i=0;i<letras.length;i++){
+            letras=in.next().toCharArray();
+            if(letras[i]=='a'){
+                caracter++;
+            }
         }
         System.out.println("En la frase o el nobre, aparece la letra A "+caracter+" veces.");
 

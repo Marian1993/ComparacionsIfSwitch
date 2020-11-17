@@ -39,7 +39,7 @@ public class Main {
         //Bucles.Ejercicio1Extra();
         //Bucles.Ejercicio2Extra();
         //Bucles.Ejercicio3Extra();
-        //terminar Bucles.Ejercicio4Extra();
+        Bucles.Ejercicio4Extra();
 
         //ExArrays.Ejercicio1AArrays();
         //ExArrays.Ejercicio1BArrays();
@@ -53,7 +53,8 @@ public class Main {
         //ExArrays.Ejercicio9Arrays();
         //ExArrays.Ejercicio10Arrays();
         //ExArrays.Ejercicio11Arrays();
-        ExArrays.Ejercicio12Arrays();
+        //ExArrays.Ejercicio12Arrays();
+        //ExArrays.Ejercicio13Arrays();
     }
 }
 
