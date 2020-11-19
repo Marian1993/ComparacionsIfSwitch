@@ -39,7 +39,11 @@ public class Main {
         //Bucles.Ejercicio1Extra();
         //Bucles.Ejercicio2Extra();
         //Bucles.Ejercicio3Extra();
-        Bucles.Ejercicio4Extra();
+        //Terminar Bucles.Ejercicio4Extra();
+
+        //CondicionalesEnMetodos.numeroPositivoNegativo(4);
+        //CondicionalesEnMetodos.multipleDe2(5);
+        //CondicionalesEnMetodos.NumeroMayor(2,4);
 
         //ExArrays.Ejercicio1AArrays();
         //ExArrays.Ejercicio1BArrays();
@@ -55,6 +59,9 @@ public class Main {
         //ExArrays.Ejercicio11Arrays();
         //ExArrays.Ejercicio12Arrays();
         //ExArrays.Ejercicio13Arrays();
+
+
+
     }
 }
 
