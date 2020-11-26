@@ -1,6 +1,5 @@
-package com.company;
+package com.Marian;
 import javax.swing.JOptionPane;
-import java.util.ArrayList;
 import java.util.Scanner;
 public class Condicionales {
 

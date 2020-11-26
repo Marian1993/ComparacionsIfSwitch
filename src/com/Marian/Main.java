@@ -1,8 +1,4 @@
-package com.company;
-
-import javax.swing.*;
-import java.lang.invoke.SwitchPoint;
-import java.util.*;
+package com.Marian;
 
 public class Main {
 
@@ -44,6 +40,11 @@ public class Main {
         //CondicionalesEnMetodos.numeroPositivoNegativo(4);
         //CondicionalesEnMetodos.multipleDe2(5);
         //CondicionalesEnMetodos.NumeroMayor(2,4);
+        //CondicionalesEnMetodos.diaSetmana(2);
+        //CondicionalesEnMetodos.momentDia(4);
+        //CondicionalesEnMetodos.notas(6);
+        //CondicionalesEnMetodos.diaMes(1,3,13);
+        //CondicionalesEnMetodos.sebraEdat(5);
 
         //ExArrays.Ejercicio1AArrays();
         //ExArrays.Ejercicio1BArrays();
