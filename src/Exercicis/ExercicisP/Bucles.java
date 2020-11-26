@@ -1,4 +1,4 @@
-package com.Marian;
+package Exercicis.ExercicisP;
 
 import java.util.ArrayList;
 import java.util.Scanner;

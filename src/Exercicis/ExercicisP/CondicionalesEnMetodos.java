@@ -1,4 +1,4 @@
-package com.Marian;
+package Exercicis.ExercicisP;
 
 public class CondicionalesEnMetodos {
 

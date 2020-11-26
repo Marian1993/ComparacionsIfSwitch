@@ -1,4 +1,4 @@
-package com.Marian;
+package Exercicis.ExercicisP;
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class Condicionales {

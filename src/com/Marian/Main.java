@@ -1,5 +1,8 @@
 package com.Marian;
 
+import Exercicis.ExercicisP.Bucles;
+import Exercicis.ExercicisP.Condicionales;
+
 public class Main {
 
     public static void main(String[] args) {
