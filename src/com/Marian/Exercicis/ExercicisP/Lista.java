@@ -1,4 +1,4 @@
-package Exercicis.ExercicisP;
+package com.Marian.Exercicis.ExercicisP;
 
 import java.util.ArrayList;
 

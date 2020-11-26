@@ -1,4 +1,4 @@
-package Exercicis.Classes;
+package com.Marian.Exercicis.Classes;
 
 public class Punt {
 

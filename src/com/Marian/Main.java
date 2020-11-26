@@ -1,7 +1,7 @@
 package com.Marian;
 
-import Exercicis.ExercicisP.Bucles;
-import Exercicis.ExercicisP.Condicionales;
+import com.Marian.Exercicis.ExercicisP.Bucles;
+import com.Marian.Exercicis.ExercicisP.Condicionales;
 
 public class Main {
 

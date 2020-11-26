@@ -1,4 +1,4 @@
-package Exercicis.Taller;
+package com.Marian.Exercicis.Taller;
 
 public class Obra {
 
