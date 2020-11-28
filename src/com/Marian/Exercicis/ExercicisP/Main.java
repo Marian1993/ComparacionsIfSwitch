@@ -1,7 +1,8 @@
-package com.Marian;
+package com.Marian.Exercicis.ExercicisP;
 
 import com.Marian.Exercicis.ExercicisP.Bucles;
 import com.Marian.Exercicis.ExercicisP.Condicionales;
+import com.Marian.Exercicis.ExercicisP.ExStrings;
 
 public class Main {
 
@@ -63,6 +64,9 @@ public class Main {
         //ExArrays.Ejercicio11Arrays();
         //ExArrays.Ejercicio12Arrays();
         //ExArrays.Ejercicio13Arrays();
+
+        ExStrings.Ejercicio1Strings();
+        //ExStrings.Ejercicio2Strings();
 
 
 
