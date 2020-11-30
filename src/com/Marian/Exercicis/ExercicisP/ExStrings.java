@@ -98,4 +98,20 @@ public class ExStrings {
 
 
         }
+        public static void Ejercicio4Strings(String paraula){
+
+        int numLletres=0;
+        int num=2;
+        int resto= numLletres%num;
+
+        for(int i=0;i<paraula.length();i++){
+
+            numLletres++;
+        }
+        if (resto==(numLletres%num)){
+            System.out.println("La paraula es parell");
+        }else{
+            System.out.println("La paraula es senar");
+        }
     }
+}

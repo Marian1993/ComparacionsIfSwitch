@@ -65,10 +65,10 @@ public class Main {
         //ExArrays.Ejercicio12Arrays();
         //ExArrays.Ejercicio13Arrays();
 
-        ExStrings.Ejercicio1Strings();
+        //ExStrings.Ejercicio1Strings();
         //ExStrings.Ejercicio2Strings();
-
-
+        //ExStrings.Ejercicio3Strings();
+        //ExStrings.Ejercicio4Strings("Tomeu");
 
     }
 }
