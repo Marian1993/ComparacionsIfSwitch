@@ -60,13 +60,11 @@ public class Bucles {
         Scanner in = new Scanner(System.in);
 
         int num = in.nextInt();
-        int num1 = 2;
-        int resto = num % num1;
 
-        while (resto == (num = in.nextInt()) % num1) {
+        while (0 == (num = in.nextInt()) % 2) {
 
+            System.out.println("Este número es multiplo de 2");
         }
-        System.out.println("Este número es multiplo de 2");
     }
 
     public void Ejercicio5Bucles() {

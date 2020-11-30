@@ -6,68 +6,59 @@ public class ExStrings {
 
     private static Scanner in;
 
-    public static void Ejercicio1Strings() {
+    public static void Ejercicio1Strings(String frase) {
 
-        in = new Scanner(System.in);
-        String value = in.nextLine();
         int a = 0;
         int e = 0;
         int i = 0;
         int o = 0;
         int u = 0;
 
-        for (int j = 0; j < value.length(); j++) {
+        for (int j = 0; j < frase.length(); j++) {
 
-            if (value.charAt(j) == 'a') {
+            if (frase.charAt(j) == 'a') {
                 a++;
-            } else if (value.charAt(j) == 'e') {
+            } else if (frase.charAt(j) == 'e') {
                 e++;
-            } else if (value.charAt(j) == 'i') {
+            } else if (frase.charAt(j) == 'i') {
                 i++;
-            } else if (value.charAt(j) == 'o') {
+            } else if (frase.charAt(j) == 'o') {
                 o++;
-            } else if (value.charAt(j) == 'u') {
+            } else if (frase.charAt(j) == 'u') {
                 u++;
             }
-
         }
         System.out.println("a: " + a + "\ne: " + e + "\ni: " + i + "\no: " + o + "\nu: " + u);
     }
-        public static void Ejercicio2Strings () {
+        public static void Ejercicio2Strings (String frase) {
 
-            in = new Scanner(System.in);
-            String valor = in.nextLine();
+            frase = frase.replace(" ", "");
+            frase = frase.replace(",", "");
+            frase = frase.replace(".", "");
 
-
-            valor = valor.replace(" ", "");
-            valor = valor.replace(",", "");
-            valor = valor.replace(".", "");
-
-            int fin = valor.length()-1 ;
+            int fin = frase.length()-1;
             int inicio = 0;
             boolean palindromo = true;
 
             while (inicio < fin) {
 
-                if (valor.charAt(inicio) != valor.charAt(fin)) {
+                if (frase.charAt(inicio) != frase.charAt(fin)) {
                     palindromo = false;
                 }
                 inicio++;
                 fin--;
             }
             if (palindromo) {
-                System.out.println("la palabra: " + valor + " es un palindromo");
+                System.out.println("la palabra: " + frase + " es un palindromo");
 
             } else {
-                System.out.println("la palabra: " + valor + " no es un palindromo");
+                System.out.println("la palabra: " + frase + " no es un palindromo");
 
             }
 
         }
-        public static void Ejercicio3Strings(){
+        public static void Ejercicio3Strings(String frase){
 
-        in=new Scanner(System.in);
-        String frase= in.nextLine();
         int a = 0;
         int e = 0;
         int i = 0;
@@ -93,25 +84,33 @@ public class ExStrings {
 
             }
 
-
         }
 
-
-        }
+    }
         public static void Ejercicio4Strings(String paraula){
 
         int numLletres=0;
-        int num=2;
-        int resto= numLletres%num;
 
         for(int i=0;i<paraula.length();i++){
 
             numLletres++;
         }
-        if (resto==(numLletres%num)){
+        if (0==(numLletres%2)){
             System.out.println("La paraula es parell");
         }else{
             System.out.println("La paraula es senar");
         }
+    }
+    public static void Ejercicio5Strings(String frase){
+
+    }
+    public static void Ejercicio6Strings(String frase){
+
+        String fraseInvertida="";
+        for(int i=frase.length()-1;i>=0;i--){
+
+            fraseInvertida=fraseInvertida+frase.charAt(i);
+        }
+        System.out.println(fraseInvertida);
     }
 }

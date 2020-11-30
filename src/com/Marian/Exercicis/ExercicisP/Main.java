@@ -69,6 +69,8 @@ public class Main {
         //ExStrings.Ejercicio2Strings();
         //ExStrings.Ejercicio3Strings();
         //ExStrings.Ejercicio4Strings("Tomeu");
+        //ExStrings.Ejercicio5Strings();
+        //ExStrings.Ejercicio6Strings("La luna no se ve");
 
     }
 }
