@@ -8,27 +8,26 @@ public class ExStrings {
 
     public static void Ejercicio1Strings(String frase) {
 
-        int a = 0;
-        int e = 0;
-        int i = 0;
-        int o = 0;
-        int u = 0;
+        char [] vocals = {'a','e','i','o','u'};
+        int [] quantitatVocals = {0,0,0,0,0};
 
-        for (int j = 0; j < frase.length(); j++) {
+        for (int j = 0 ; j < frase.length() ; j++) {
 
-            if (frase.charAt(j) == 'a') {
-                a++;
-            } else if (frase.charAt(j) == 'e') {
-                e++;
-            } else if (frase.charAt(j) == 'i') {
-                i++;
-            } else if (frase.charAt(j) == 'o') {
-                o++;
-            } else if (frase.charAt(j) == 'u') {
-                u++;
+            if (frase.charAt(j) == vocals[0]) {
+                quantitatVocals[0]++;
+            } else if (frase.charAt(j) == vocals[1]) {
+                quantitatVocals[1]++;
+            } else if (frase.charAt(j) == vocals[2]) {
+                quantitatVocals[2]++;
+            } else if (frase.charAt(j) == vocals[3]) {
+                quantitatVocals[3]++;
+            } else if (frase.charAt(j) == vocals[4]) {
+                quantitatVocals[4]++;
             }
         }
-        System.out.println("a: " + a + "\ne: " + e + "\ni: " + i + "\no: " + o + "\nu: " + u);
+        for (int x=0 ; x<quantitatVocals.length ; x++ ){
+            System.out.println(vocals[x]+": "+quantitatVocals[x]);
+        }
     }
         public static void Ejercicio2Strings (String frase) {
 
@@ -59,39 +58,31 @@ public class ExStrings {
         }
         public static void Ejercicio3Strings(String frase){
 
-        int a = 0;
-        int e = 0;
-        int i = 0;
-        int o = 0;
-        int u = 0;
-        boolean primeravocal=true;
+        char [] vocals = {'a','e','i','o','u'};
+        char lletra = 'z';
+        int total= 0;
 
-        for (int j=0;j<frase.length();j++){
+        for (int j=0 ; j<frase.length() ; j++){
 
-            if(frase.charAt(j) == 'a'){
+            if(lletra == 'z'){
+                for (int x=0 ; x< vocals.length ; x++){
 
+                    if(vocals[x] == frase.charAt(j)) {
+                        lletra = vocals[x];
+                        total++;
+                    }
+                }
+            }else if (lletra == frase.charAt(j)){
+                total++;
             }
-            if(frase.charAt(j) == 'e'){
-
-            }
-            if(frase.charAt(j) == 'i'){
-
-            }
-            if(frase.charAt(j) == 'o'){
-
-            }
-            if(frase.charAt(j) == 'u'){
-
-            }
-
         }
-
+        System.out.println(lletra+": "+total);
     }
         public static void Ejercicio4Strings(String paraula){
 
         int numLletres=0;
 
-        for(int i=0;i<paraula.length();i++){
+        for(int i=0 ; i<paraula.length() ; i++){
 
             numLletres++;
         }
@@ -103,6 +94,31 @@ public class ExStrings {
     }
     public static void Ejercicio5Strings(String frase){
 
+        int numParell = 0;
+        int numImparell = 0;
+        int contador = 0;
+
+        for (int i=0 ; i<frase.length() ; i++){
+
+            if(frase.charAt(i) != ' '){
+                contador++;
+            }
+            if (frase.charAt(i) == ' '){
+
+               if (0 == (contador%2)){
+                    numParell++;
+                }else if (0 != (contador%2)){
+                    numImparell++;
+                }
+                contador=0;
+            }
+        }
+        if (0 == (contador%2)){
+            numParell++;
+        }else if (0 != (contador%2)){
+            numImparell++;
+        }
+        System.out.println("Parales pars: " + numParell + "\nParaules impars: " + numImparell);
     }
     public static void Ejercicio6Strings(String frase){
 

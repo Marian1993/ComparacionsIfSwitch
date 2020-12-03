@@ -65,11 +65,11 @@ public class Main {
         //ExArrays.Ejercicio12Arrays();
         //ExArrays.Ejercicio13Arrays();
 
-        //ExStrings.Ejercicio1Strings();
+        //ExStrings.Ejercicio1Strings("hola");
         //ExStrings.Ejercicio2Strings();
-        //ExStrings.Ejercicio3Strings();
+        //ExStrings.Ejercicio3Strings("Hola me llamo manolo");
         //ExStrings.Ejercicio4Strings("Tomeu");
-        //ExStrings.Ejercicio5Strings();
+        ExStrings.Ejercicio5Strings("cuando vas a venir");
         //ExStrings.Ejercicio6Strings("La luna no se ve");
 
     }
