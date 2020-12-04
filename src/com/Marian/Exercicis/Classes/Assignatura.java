@@ -38,7 +38,7 @@ public class Assignatura {
         this.llistaAlumnes.remove(alumne);
     }
 
-    public Alumne millorAlumne(){
+    /*public Alumne millorAlumne(){
         Alumne alumne=new Alumne("Marian", 14,23,new double[] {1,2,3,4});
         for(int i=0;i<llistaAlumnes.size();i++){
             if(alumne.mitjanaNotes()< llistaAlumnes.get(i).mitjanaNotes()){
@@ -46,7 +46,7 @@ public class Assignatura {
             }
         }
         return alumne;
-    }
+    }*/
     public ArrayList<Alumne> printAlumne(int numAlumne){
         llistaAlumnes.get(numAlumne);
         return llistaAlumnes;

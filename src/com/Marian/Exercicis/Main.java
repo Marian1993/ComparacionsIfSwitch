@@ -1,5 +1,6 @@
-package com.Marian.Exercicis.ExercicisP;
+package com.Marian.Exercicis;
 
+import com.Marian.Exercicis.Classes.Persona;
 import com.Marian.Exercicis.ExercicisP.Bucles;
 import com.Marian.Exercicis.ExercicisP.Condicionales;
 import com.Marian.Exercicis.ExercicisP.ExStrings;
@@ -69,8 +70,12 @@ public class Main {
         //ExStrings.Ejercicio2Strings();
         //ExStrings.Ejercicio3Strings("Hola me llamo manolo");
         //ExStrings.Ejercicio4Strings("Tomeu");
-        ExStrings.Ejercicio5Strings("cuando vas a venir");
+        //Ejercicio5Strings("cuando vas a venir");
         //ExStrings.Ejercicio6Strings("La luna no se ve");
+
+        /*Persona persona1= new Persona("David", 24, "45367721M", "Famella", 656789234);
+        System.out.println(persona1.toString());*/
+
 
     }
 }

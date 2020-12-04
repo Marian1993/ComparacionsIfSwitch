@@ -1,48 +1,21 @@
 package com.Marian.Exercicis.Classes;
 
-public class Alumne {
+public class Alumne extends Persona{
 
-    private String nom;
-    private int edat;
-    private int identificador;
+
     private double[] notes;
 
     public Alumne() {}
 
-    public Alumne(String nom,int edat,int identificador,double[] notes){
+    public Alumne(String nom,int edat,String identificador, String genere, int telefon, double[] notes){
 
-        this.nom=nom;
-        this.edat=edat;
-        this.identificador=identificador;
+        super(nom,edat,identificador,genere,telefon);
         this.notes=notes;
 
     }
 
-    public String getNom() {
-        return this.nom;
-    }
-    public int getEdat() {
-        return this.edat;
-    }
-
-    public int getIdentificador() {
-        return this.identificador;
-    }
-
     public double[] getNotes() {
         return this.notes;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public void setEdat(int edat) {
-        this.edat = edat;
-    }
-
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
     }
 
     public void setNotes(double[] notes) {
