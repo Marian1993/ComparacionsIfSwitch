@@ -7,9 +7,9 @@ public class Alumne extends Persona{
 
     public Alumne() {}
 
-    public Alumne(String nom,int edat,String identificador, String genere, int telefon, double[] notes){
+    public Alumne(String nom,int edat,String DNI, String genere, int telefon, double[] notes){
 
-        super(nom,edat,identificador,genere,telefon);
+        super(nom,edat,DNI,genere,telefon);
         this.notes=notes;
 
     }
@@ -22,6 +22,17 @@ public class Alumne extends Persona{
         this.notes = notes;
     }
 
+    public void display(){
+        System.out.println("Nom alumne: " + getName());
+        System.out.println("Edat alumne: " + getAge());
+        System.out.println("DNI alumne: " + getDNI());
+        System.out.println("Genere alumne: " + getGender());
+        System.out.println("Telefon alumne: " + getPhone());
+        //System.out.println("Notes alumne:" + getNotes());
+        System.out.println("Mitjana de notes alumne: " + mitjanaNotes());
+
+    }
+
     public double mitjanaNotes(){
         int totalNotes=0;
 
@@ -30,6 +41,13 @@ public class Alumne extends Persona{
             totalNotes+=notes[i];
         }
         return (double)totalNotes/notes.length;
+    }
+    public void notes (){
+
+        for(int i=0 ; i<notes.length ; i++){
+
+            System.out.println(notes[i]);
+        }
     }
 
 }

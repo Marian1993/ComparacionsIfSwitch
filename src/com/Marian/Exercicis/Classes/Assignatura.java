@@ -60,8 +60,8 @@ public class Assignatura {
 
         for( int i=0; i<llistaAlumnes.size();i++){
 
-            System.out.println(llistaAlumnes.get(i).getNom());
-            System.out.println(llistaAlumnes.get(i).getEdat());
+            System.out.println(llistaAlumnes.get(i).getName());
+            System.out.println(llistaAlumnes.get(i).getAge());
             System.out.println(llistaAlumnes.get(i).mitjanaNotes());
 
         }

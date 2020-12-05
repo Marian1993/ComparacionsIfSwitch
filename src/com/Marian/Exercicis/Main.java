@@ -1,9 +1,13 @@
 package com.Marian.Exercicis;
 
+import com.Marian.Exercicis.Classes.Alumne;
 import com.Marian.Exercicis.Classes.Persona;
+import com.Marian.Exercicis.Classes.Professor;
 import com.Marian.Exercicis.ExercicisP.Bucles;
 import com.Marian.Exercicis.ExercicisP.Condicionales;
 import com.Marian.Exercicis.ExercicisP.ExStrings;
+
+import java.lang.reflect.Array;
 
 public class Main {
 
@@ -75,6 +79,25 @@ public class Main {
 
         /*Persona persona1= new Persona("David", 24, "45367721M", "Famella", 656789234);
         System.out.println(persona1.toString());*/
+
+        Alumne alumne1=new Alumne();
+
+        //Donar valors a les variables
+        alumne1.setName("Juana");
+        alumne1.setAge(14);
+        alumne1.setDNI("45234465K");
+        alumne1.setPhone(65642398);
+        alumne1.setNotes (new double [] {5.7,7.3,2.4,8.0,9.1});
+        alumne1.mitjanaNotes();
+
+
+        alumne1.display();
+
+        System.out.println();
+        Professor professor1= new Professor("Miquel", 34, "32456678S", "Home",
+                654778672, "Matmatiques");
+
+        professor1.display();
 
 
     }
