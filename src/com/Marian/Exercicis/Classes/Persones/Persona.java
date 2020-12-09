@@ -1,4 +1,4 @@
-package com.Marian.Exercicis.Classes;
+package com.Marian.Exercicis.Classes.Persones;
 
 public class Persona {
 

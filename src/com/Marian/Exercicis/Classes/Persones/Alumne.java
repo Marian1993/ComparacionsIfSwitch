@@ -1,6 +1,8 @@
-package com.Marian.Exercicis.Classes;
+package com.Marian.Exercicis.Classes.Persones;
 
-public class Alumne extends Persona{
+import com.Marian.Exercicis.Classes.Persones.Persona;
+
+public class Alumne extends Persona {
 
 
     private double[] notes;
@@ -28,7 +30,8 @@ public class Alumne extends Persona{
         System.out.println("DNI alumne: " + getDNI());
         System.out.println("Genere alumne: " + getGender());
         System.out.println("Telefon alumne: " + getPhone());
-        //System.out.println("Notes alumne:" + getNotes());
+        System.out.println("Notes alumne:");
+        notes();
         System.out.println("Mitjana de notes alumne: " + mitjanaNotes());
 
     }
@@ -48,6 +51,7 @@ public class Alumne extends Persona{
 
             System.out.println(notes[i]);
         }
+
     }
 
 }

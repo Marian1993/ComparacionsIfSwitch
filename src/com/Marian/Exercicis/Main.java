@@ -1,13 +1,15 @@
 package com.Marian.Exercicis;
 
-import com.Marian.Exercicis.Classes.Alumne;
-import com.Marian.Exercicis.Classes.Persona;
-import com.Marian.Exercicis.Classes.Professor;
+import com.Marian.Exercicis.Classes.*;
+import com.Marian.Exercicis.Classes.Poligonos.Quadrat;
+import com.Marian.Exercicis.Classes.Poligonos.Triangle;
 import com.Marian.Exercicis.ExercicisP.Bucles;
 import com.Marian.Exercicis.ExercicisP.Condicionales;
 import com.Marian.Exercicis.ExercicisP.ExStrings;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 
@@ -80,7 +82,7 @@ public class Main {
         /*Persona persona1= new Persona("David", 24, "45367721M", "Famella", 656789234);
         System.out.println(persona1.toString());*/
 
-        Alumne alumne1=new Alumne();
+        /*Alumne alumne1=new Alumne();
 
         //Donar valors a les variables
         alumne1.setName("Juana");
@@ -89,15 +91,58 @@ public class Main {
         alumne1.setPhone(65642398);
         alumne1.setNotes (new double [] {5.7,7.3,2.4,8.0,9.1});
         alumne1.mitjanaNotes();
-
-
         alumne1.display();
 
         System.out.println();
+
         Professor professor1= new Professor("Miquel", 34, "32456678S", "Home",
                 654778672, "Matmatiques");
 
-        professor1.display();
+        professor1.display();*/
+
+
+        /*Programador programador=new Programador();
+
+        programador.setName("David");
+        programador.setSou(1250.25);
+        programador.setAntiguetat(1);
+
+        //programador.addTask("Mirar falls d'execuci");
+        //programador.addTask("Vigilar qui fa modificacions");
+
+        System.out.println("Nom: "+ programador.getName() + "\nSou: " + programador.getSou() +
+                "€\nAntiguetat: " + programador.getAntiguetat() + " any");
+
+        programador.pujaSou();
+        programador.mesAntiguetat();
+
+        System.out.println("Sou: " + programador.getSou() + "€\nAntiguetat: " + programador.getAntiguetat() + " anys");
+
+        programador.addTask("Fer algo");
+        programador.showTask();
+
+
+        CapProjecte capProjecte = new CapProjecte();
+
+        ArrayList<String> projectes = new ArrayList<String>();
+
+        projectes.add("Fer un joc");
+
+        capProjecte.setProjectes(projectes);*/
+
+        /*Quadrat quadrat = new Quadrat();
+        quadrat.calcularperimetre(4,4,4,4);
+        System.out.println(quadrat.getPerimetre());
+        quadrat.calcularArea(5);
+        System.out.println(quadrat.getArea());
+
+        Triangle triangle = new Triangle();
+        triangle.calcularperimetre(6,6,4);
+        System.out.println(triangle.getPerimetre());
+        triangle.calcularArea(6.6,4.5);
+        System.out.println(triangle.getArea());*/
+
+
 
 
     }

@@ -1,4 +1,6 @@
-package com.Marian.Exercicis.Classes;
+package com.Marian.Exercicis.Classes.Persones;
+
+import com.Marian.Exercicis.Classes.Persones.Alumne;
 
 import java.util.ArrayList;
 
