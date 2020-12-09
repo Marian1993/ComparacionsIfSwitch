@@ -6,6 +6,7 @@ import com.Marian.Exercicis.Classes.Poligonos.Triangle;
 import com.Marian.Exercicis.ExercicisP.Bucles;
 import com.Marian.Exercicis.ExercicisP.Condicionales;
 import com.Marian.Exercicis.ExercicisP.ExStrings;
+import com.Marian.Exercicis.ExercicisP.ExercicisDiversos;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -142,9 +143,9 @@ public class Main {
         triangle.calcularArea(6.6,4.5);
         System.out.println(triangle.getArea());*/
 
-
-
-
+        //ExercicisDiversos.posicioValorMinim(new int[] {6,4,5,3,4,5,6,9});
+        //ExercicisDiversos.numerosOrdenats(new int[] {1,2,3,4,5,6,7,8});
+        ExercicisDiversos.arrayAlReves(new int[] {1,2,3,4,5});
     }
 }
 
