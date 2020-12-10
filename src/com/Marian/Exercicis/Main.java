@@ -145,7 +145,11 @@ public class Main {
 
         //ExercicisDiversos.posicioValorMinim(new int[] {6,4,5,3,4,5,6,9});
         //ExercicisDiversos.numerosOrdenats(new int[] {1,2,3,4,5,6,7,8});
-        ExercicisDiversos.arrayAlReves(new int[] {1,2,3,4,5});
+        //ExercicisDiversos.arrayAlReves(new int[] {1,2,3,4,5});
+        //ExercicisDiversos.sabreIndex(new int[] {7,5,8,2,6,9},6);
+        ExercicisDiversos.canviarValorArray(new int [] {2,5,7,3,8,9}, 2);
+        //ExercicisDiversos.retornarTrueOFalse(new int[] {1,2,3,4,5});
+        //ExercicisDiversos.serieFubonacci(new int[] {1,1,2,3,5,8,13});
     }
 }
 
