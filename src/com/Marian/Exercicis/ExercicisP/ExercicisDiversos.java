@@ -2,7 +2,7 @@ package com.Marian.Exercicis.ExercicisP;
 
 public class ExercicisDiversos {
 
-    public static void posicioValorMinim(int [] numeros){
+    public static int posicioValorMinim(int [] numeros){
 
         int numMinim = 10000000;
         int posicio = 0;
@@ -15,9 +15,9 @@ public class ExercicisDiversos {
                 posicio = i+1;
             }
         }
-        System.out.println(posicio);
+        return posicio;
     }
-    public static void numerosOrdenats(int [] numeros){
+    public static boolean numerosOrdenats(int [] numeros){
 
         boolean decreixent = false;
 
@@ -31,14 +31,7 @@ public class ExercicisDiversos {
                 decreixent = false;
             }
         }
-        if(decreixent == true){
-
-            System.out.println(decreixent);
-        }
-        else{
-
-            System.out.println(decreixent);
-        }
+        return decreixent;
     }
     public static void arrayAlReves (int [] numeros){
 
@@ -60,24 +53,20 @@ public class ExercicisDiversos {
         }
         System.out.println("La posicio es: " + index);
     }
-    public static void canviarValorArray (int[] numeros, int numero){
+    public static void canviarValorArray (int[] numeros, int posicio){
 
-        int numero2 = 0;
+        int numeroMesAltIndex = 0;
 
         for(int i=0 ; i<numeros.length ; i++){
 
-            if(numero2 < numeros[i]){
+            if(numeros[numeroMesAltIndex] < numeros[i]){
 
-                numeros[numero2] = numeros[i];
-            }
-            if(numero == i){
-
-                numeros[numero] = numeros[i];
+                numeroMesAltIndex = i;
             }
         }
-        int auxiliar = numeros[numero2];
-        numeros[numero2] = numeros[numero];
-        numeros[numero] = auxiliar;
+        int auxiliar = numeros[numeroMesAltIndex];
+        numeros[numeroMesAltIndex] = numeros[posicio];
+        numeros[posicio] = auxiliar;
 
         for ( int i=0 ; i<numeros.length ; i++){
 
