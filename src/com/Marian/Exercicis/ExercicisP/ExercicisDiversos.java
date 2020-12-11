@@ -33,16 +33,16 @@ public class ExercicisDiversos {
         }
         return decreixent;
     }
-    public static void arrayAlReves (int [] numeros){
+    public static int [] arrayAlReves (int [] numeros){
 
         for(int i=numeros.length-1 ; i>=0 ; i--){
 
-            System.out.println(numeros[i]);
         }
+        return numeros;
     }
-    public static void sabreIndex (int [] numeros, int num){
+    public static int sabreIndex (int [] numeros, int num){
 
-        int index = 0;
+        int index = -1;
 
         for(int i=0; i<numeros.length-1 ; i++){
 
@@ -51,9 +51,9 @@ public class ExercicisDiversos {
                 index = i+1;
             }
         }
-        System.out.println("La posicio es: " + index);
+        return index;
     }
-    public static void canviarValorArray (int[] numeros, int posicio){
+    public static int [] canviarValorArray (int[] numeros, int posicio){
 
         int numeroMesAltIndex = 0;
 
@@ -68,13 +68,9 @@ public class ExercicisDiversos {
         numeros[numeroMesAltIndex] = numeros[posicio];
         numeros[posicio] = auxiliar;
 
-        for ( int i=0 ; i<numeros.length ; i++){
-
-            System.out.println(numeros[i]);
-
-        }
+        return numeros;
     }
-    public static void retornarTrueOFalse(int [] numeros){
+    public static boolean retornarTrueOFalse(int [] numeros){
 
         boolean ascendent = false;
         for( int i=0 ; i<numeros.length-1 ; i++){
@@ -87,15 +83,10 @@ public class ExercicisDiversos {
                 ascendent = false;
             }
         }
-        if(ascendent == true){
-
-            System.out.println(ascendent);
-        }else{
-            System.out.println(ascendent);
-        }
+       return ascendent;
 
     }
-    public static void serieFubonacci(int [] numeros){
+    public static boolean serieFubonacci(int [] numeros){
 
         int a = 0;
         int b = 1;
@@ -115,14 +106,53 @@ public class ExercicisDiversos {
                 esCompleix=false;
             }
         }
-        if(esCompleix == true){
+       return esCompleix;
+    }
+    public static int numeroMesRepetit(int [] numeros){
 
-            System.out.println(esCompleix);
-        }
-        else {
-            System.out.println(esCompleix);
-        }
+        int numMesRepetit = 0;
+        int numDeRepeticions = 0;
 
+        for (int i=0 ; i<numeros.length ; i++){
+
+            for (int j=0 ; j<numeros.length ; j++) {
+                if (numeros[i] == numeros[j]) {
+
+                    numMesRepetit = numeros[i];
+                    numDeRepeticions++;
+                }
+            }
+        }
+        return numMesRepetit;
+    }
+    public static int calcularFactorial (int numero){
+
+        int resultat = 1;
+
+        for (int i=numero  ; i>0 ; i--){
+            resultat=resultat*i;
+        }
+        return resultat;
+    }
+    public static String paraulaMesLlargaAlReves (String frase){
+
+        String paraulaLlarga = " ";
+        int llargaria = 0;
+        String paraulaAlReves;
+
+        for (char i=0 ; i<frase.length() ; i++){
+
+            if(!(frase.length() == ' ')) {
+                paraulaLlarga += i;
+                llargaria++;
+            }else if (frase.length() == ' '){
+
+                llargaria = 0;
+            }
+
+
+        }
+        return paraulaLlarga;
     }
 
 }

@@ -10,6 +10,7 @@ import com.Marian.Exercicis.ExercicisP.ExercicisDiversos;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class Main {
@@ -143,13 +144,16 @@ public class Main {
         triangle.calcularArea(6.6,4.5);
         System.out.println(triangle.getArea());*/
 
-        //ExercicisDiversos.posicioValorMinim(new int[] {6,4,5,3,4,5,6,9});
-        //ExercicisDiversos.numerosOrdenats(new int[] {1,2,3,4,5,6,7,8});
-        //ExercicisDiversos.arrayAlReves(new int[] {1,2,3,4,5});
-        //ExercicisDiversos.sabreIndex(new int[] {7,5,8,2,6,9},6);
-        ExercicisDiversos.canviarValorArray(new int [] {2,8,9,5}, 1);
-        //ExercicisDiversos.retornarTrueOFalse(new int[] {1,2,3,4,5});
-        //ExercicisDiversos.serieFubonacci(new int[] {1,1,2,3,5,8,13});
+        //System.out.println(ExercicisDiversos.posicioValorMinim(new int[] {6,4,5,3,7,5,6,9}));
+        //System.out.println(ExercicisDiversos.numerosOrdenats(new int[] {1,2,3,4,5,6,7,8}));
+        //System.out.println(Arrays.toString(ExercicisDiversos.arrayAlReves(new int[] {1,2,3,4,5})));
+        //System.out.println(ExercicisDiversos.sabreIndex(new int[] {7,5,8,2,6,9},3));
+        //System.out.println(Arrays.toString(ExercicisDiversos.canviarValorArray(new int [] {2,8,9,5}, 1)));
+        //System.out.println(ExercicisDiversos.retornarTrueOFalse(new int[] {1,2,3,4,5}));
+        //System.out.println(ExercicisDiversos.serieFubonacci(new int[] {1,1,2,3,5,8,13}));
+        //InacabatSystem.out.println(ExercicisDiversos.numeroMesRepetit(new int[] {7,2,3,2,6,2,3}));
+        //System.out.println(ExercicisDiversos.calcularFactorial(4));
+        System.out.println(ExercicisDiversos.paraulaMesLlargaAlReves("Hola me nom Marian"));
     }
 }
 
