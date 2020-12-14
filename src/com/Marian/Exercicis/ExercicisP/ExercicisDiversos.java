@@ -2,64 +2,67 @@ package com.Marian.Exercicis.ExercicisP;
 
 public class ExercicisDiversos {
 
-    public static int posicioValorMinim(int [] numeros){
+    public static int posicioValorMinim(int[] numeros) {
 
         int numMinim = 10000000;
         int posicio = 0;
 
-        for(int i=0 ; i<numeros.length ; i++){
+        for (int i = 0; i < numeros.length; i++) {
 
-            if(numMinim > numeros[i]){
+            if (numMinim > numeros[i]) {
 
                 numMinim = numeros[i];
-                posicio = i+1;
+                posicio = i + 1;
             }
         }
         return posicio;
     }
-    public static boolean numerosOrdenats(int [] numeros){
+
+    public static boolean numerosOrdenats(int[] numeros) {
 
         boolean decreixent = false;
 
-        for(int i=0 ; i<numeros.length-1 ; i++){
+        for (int i = 0; i < numeros.length - 1; i++) {
 
-            if(numeros[i] > numeros[i+1]){
+            if (numeros[i] > numeros[i + 1]) {
 
                 decreixent = true;
-            }
-            else{
+            } else {
                 decreixent = false;
             }
         }
         return decreixent;
     }
-    public static int [] arrayAlReves (int [] numeros){
 
-        for(int i=numeros.length-1 ; i>=0 ; i--){
+    public static int[] arrayAlReves(int[] numeros) {
+
+        for (int i = numeros.length - 1; i >= 0; i--) {
 
         }
         return numeros;
     }
-    public static int sabreIndex (int [] numeros, int num){
+
+    public static int sabreIndex(int[] numeros, int num) {
 
         int index = -1;
 
-        for(int i=0; i<numeros.length-1 ; i++){
+        for (int i = 0; i < numeros.length - 1; i++) {
 
-            if(num == numeros[i]){
+            if (num == numeros[i]) {
 
-                index = i+1;
+                index = i + 1;
             }
         }
         return index;
     }
-    public static int [] canviarValorArray (int[] numeros, int posicio){
+
+    public static int[] canviarValorArray(int[] numeros, int posicio) {
 
         int numeroMesAltIndex = 0;
 
-        for(int i=0 ; i<numeros.length ; i++){
+        for (int i = 0; i < numeros.length; i++) {
 
-            if(numeros[numeroMesAltIndex] < numeros[i]){
+            if (numeros[numeroMesAltIndex] < numeros[i]) {
 
                 numeroMesAltIndex = i;
             }
@@ -70,89 +73,122 @@ public class ExercicisDiversos {
 
         return numeros;
     }
-    public static boolean retornarTrueOFalse(int [] numeros){
+
+    public static boolean retornarTrueOFalse(int[] numeros) {
 
         boolean ascendent = false;
-        for( int i=0 ; i<numeros.length-1 ; i++){
+        for (int i = 0; i < numeros.length - 1; i++) {
 
-            if(numeros[i] < numeros[i+1]){
+            if (numeros[i] < numeros[i + 1]) {
 
-                ascendent=true;
-            }
-            else{
+                ascendent = true;
+            } else {
                 ascendent = false;
             }
         }
-       return ascendent;
+        return ascendent;
 
     }
-    public static boolean serieFubonacci(int [] numeros){
+
+    public static boolean serieFubonacci(int[] numeros) {
 
         int a = 0;
         int b = 1;
         int c;
         boolean esCompleix = false;
 
-        for(int i=0 ; i<numeros.length-1 ; i++){
+        for (int i = 0; i < numeros.length - 1; i++) {
 
             c = a + b;
             a = b;
             b = c;
-            if (numeros[i] == a){
+            if (numeros[i] == a) {
 
-                esCompleix=true;
-            }
-            else {
-                esCompleix=false;
+                esCompleix = true;
+            } else {
+                esCompleix = false;
             }
         }
-       return esCompleix;
+        return esCompleix;
     }
-    public static int numeroMesRepetit(int [] numeros){
+
+    public static int numeroMesRepetit(int[] numeros) {
 
         int numMesRepetit = 0;
         int numDeRepeticions = 0;
 
-        for (int i=0 ; i<numeros.length ; i++){
+        for (int i = 0; i < numeros.length; i++) {
 
-            for (int j=0 ; j<numeros.length ; j++) {
-                if (numeros[i] == numeros[j]) {
+            numMesRepetit = numeros[i];
 
-                    numMesRepetit = numeros[i];
+            for (int j = 0; j < numeros.length; j++) {
+                if (numeros[j] == numMesRepetit) {
+
                     numDeRepeticions++;
                 }
             }
+
         }
         return numMesRepetit;
     }
-    public static int calcularFactorial (int numero){
+
+    public static int calcularFactorial(int numero) {
 
         int resultat = 1;
 
-        for (int i=numero  ; i>0 ; i--){
-            resultat=resultat*i;
+        for (int i = numero; i > 0; i--) {
+            resultat = resultat * i;
         }
         return resultat;
     }
-    public static String paraulaMesLlargaAlReves (String frase){
 
-        String paraulaLlarga = " ";
+    public static String paraulaMesLlargaAlReves(String frase) {
+
+        String paraulaActual = "";
+        String paraulaLlarga = "";
         int llargaria = 0;
-        String paraulaAlReves;
+        String paraulaAlReves = "";
 
-        for (char i=0 ; i<frase.length() ; i++){
+        for (int i = 0; i < frase.length(); i++) {
 
-            if(!(frase.length() == ' ')) {
-                paraulaLlarga += i;
-                llargaria++;
-            }else if (frase.length() == ' '){
+            if (!(frase.charAt(i) == ' ')) {
+                paraulaActual += frase.charAt(i);
 
-                llargaria = 0;
+
+            } else if (frase.charAt(i) == ' ') {
+
+                if (paraulaActual.length() > paraulaLlarga.length()) {
+
+                    paraulaLlarga = paraulaActual;
+
+                    paraulaActual = "";
+                }
             }
-
-
         }
-        return paraulaLlarga;
+        for (int j = paraulaLlarga.length(); j > 0; j--) {
+
+            paraulaAlReves = paraulaLlarga;
+        }
+        return paraulaAlReves;
+    }
+
+    public static int quantitatDeParaulaMesLlarga(String frase) {
+
+        int numLlletres = 0;
+
+        for (int i = 0; i < frase.length(); i++) {
+
+            if (frase.charAt(i) != ' ') {
+
+                numLlletres++;
+
+            } else if (frase.charAt(i) == ' ') {
+
+            }
+        }
+        return numLlletres;
+
     }
 
 }
+
