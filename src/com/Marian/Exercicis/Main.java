@@ -153,7 +153,8 @@ public class Main {
         //System.out.println(ExercicisDiversos.serieFubonacci(new int[] {1,1,2,3,5,8,13}));
         //System.out.println(ExercicisDiversos.numeroMesRepetit(new int[] {7,2,3,2,6,2,3}));
         //System.out.println(ExercicisDiversos.calcularFactorial(4));
-        System.out.println(ExercicisDiversos.paraulaMesLlargaAlReves("Mañana cuando puta llegaras"));
+        //System.out.println(ExercicisDiversos.paraulaMesLlargaAlReves("Mañana cuando puta llegaras"));
+        System.out.println(ExercicisDiversos.paraulesAlReves("Hola me nom Marian"));
     }
 }
 

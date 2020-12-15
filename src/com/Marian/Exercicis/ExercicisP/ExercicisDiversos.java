@@ -4,18 +4,16 @@ public class ExercicisDiversos {
 
     public static int posicioValorMinim(int[] numeros) {
 
-        int numMinim = 10000000;
         int posicio = 0;
 
         for (int i = 0; i < numeros.length; i++) {
 
-            if (numMinim > numeros[i]) {
+            if (numeros[posicio] > numeros[i]) {
 
-                numMinim = numeros[i];
-                posicio = i + 1;
+                posicio = i;
             }
         }
-        return posicio;
+        return posicio+1;
     }
 
     public static boolean numerosOrdenats(int[] numeros) {
@@ -160,14 +158,17 @@ public class ExercicisDiversos {
                 if (paraulaActual.length() > paraulaLlarga.length()) {
 
                     paraulaLlarga = paraulaActual;
-
-                    paraulaActual = "";
                 }
+                paraulaActual = "";
             }
         }
-        for (int j = paraulaLlarga.length(); j > 0; j--) {
+        if (paraulaActual.length() > paraulaLlarga.length()) {
 
-            paraulaAlReves = paraulaLlarga;
+            paraulaLlarga = paraulaActual;
+        }
+        for (int j = paraulaLlarga.length()-1; j >= 0; j--) {
+
+            paraulaAlReves += paraulaLlarga.charAt(j);
         }
         return paraulaAlReves;
     }
@@ -188,6 +189,36 @@ public class ExercicisDiversos {
         }
         return numLlletres;
 
+    }
+    public static String paraulesAlReves(String paraules){
+
+        String paraulesInvertides = "";
+        String paraulaGuardada = "";
+
+        for(int i=0 ; i<paraules.length() ; i++){
+
+            if(!(paraules.charAt(i) == ' ')){
+
+                paraulaGuardada += paraules.charAt(i);
+            }else if(paraules.charAt(i) == ' '){
+
+                for(int j=0 ; j<1 ; j++) {
+
+                    for( int z=paraulaGuardada.length()-1 ; z>=0 ; z-- )
+                    paraulesInvertides += paraulaGuardada.charAt(z);
+                }
+                paraulesInvertides += " ";
+                paraulaGuardada = "";
+            }
+        }
+        for(int j=0 ; j<1 ; j++) {
+
+            for( int z=paraulaGuardada.length()-1 ; z>=0 ; z-- )
+                paraulesInvertides += paraulaGuardada.charAt(z);
+        }
+        paraulesInvertides += " ";
+
+        return paraulesInvertides;
     }
 
 }
