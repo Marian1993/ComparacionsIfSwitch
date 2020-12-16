@@ -154,7 +154,8 @@ public class Main {
         //System.out.println(ExercicisDiversos.numeroMesRepetit(new int[] {7,2,3,2,6,2,3}));
         //System.out.println(ExercicisDiversos.calcularFactorial(4));
         //System.out.println(ExercicisDiversos.paraulaMesLlargaAlReves("Mañana cuando puta llegaras"));
-        System.out.println(ExercicisDiversos.paraulesAlReves("Hola me nom Marian"));
+        //System.out.println(ExercicisDiversos.paraulesAlReves("Hola me nom Marian"));
+        System.out.println(Arrays.toString(ExercicisDiversos.swap(new int[] {2,6,3,4,1,8}, 3)));
     }
 }
 

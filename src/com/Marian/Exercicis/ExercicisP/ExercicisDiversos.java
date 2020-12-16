@@ -110,6 +110,7 @@ public class ExercicisDiversos {
         return esCompleix;
     }
 
+    //incomplet
     public static int numeroMesRepetit(int[] numeros) {
 
         int numMesRepetit = 0;
@@ -144,7 +145,6 @@ public class ExercicisDiversos {
 
         String paraulaActual = "";
         String paraulaLlarga = "";
-        int llargaria = 0;
         String paraulaAlReves = "";
 
         for (int i = 0; i < frase.length(); i++) {
@@ -190,6 +190,10 @@ public class ExercicisDiversos {
         return numLlletres;
 
     }
+    public static int posicioParaula(String frase){
+
+        return -1;
+    }
     public static String paraulesAlReves(String paraules){
 
         String paraulesInvertides = "";
@@ -221,5 +225,23 @@ public class ExercicisDiversos {
         return paraulesInvertides;
     }
 
+    //Es el mateix exercici que canviarValorArray de una altre manera.
+    public static int[] swap(int[] numeros, int posicio){
+
+        int max = 0;
+        int index = 0;
+
+        for(int i=0 ;i<numeros.length ; i++){
+            if(numeros[i] > max){
+                max = numeros[i];
+                index = i;
+            }
+        }
+        int aux = numeros[posicio];
+        numeros[posicio] = max;
+        numeros[index]=aux;
+
+        return numeros;
+    }
 }
 
