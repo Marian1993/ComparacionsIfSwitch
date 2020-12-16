@@ -175,24 +175,89 @@ public class ExercicisDiversos {
 
     public static int quantitatDeParaulaMesLlarga(String frase) {
 
-        int numLlletres = 0;
+        int numActual = 0;
+        int numcomparacio = 0;
+        int numRepeticions = 0;
 
         for (int i = 0; i < frase.length(); i++) {
 
             if (frase.charAt(i) != ' ') {
 
-                numLlletres++;
+                numActual++;
 
-            } else if (frase.charAt(i) == ' ') {
+            } else{
+                if(numActual > numcomparacio) {
 
+                    numcomparacio = numActual;
+                }
+                numActual = 0;
             }
         }
-        return numLlletres;
+        for(int j=0 ; j<frase.length() ; j++){
+
+            if(frase.charAt(j) != ' '){
+                numActual++;
+            }else{
+
+                if(numActual == numcomparacio){
+                    numRepeticions++;
+                }
+                numActual = 0;
+            }
+        }
+        return numRepeticions;
 
     }
-    public static int posicioParaula(String frase){
+    public static int posicioParaula(String frase, String paraula){
+
+        String paraulaComparada = "";
+        int posicio = 0;
+
+        for(int i=0 ; i<frase.length() ; i++){
+
+            if(frase.charAt(i) != ' '){
+
+                paraulaComparada += frase.charAt(i);
+
+
+            }else{
+                posicio += 1;
+
+                if(paraula.equalsIgnoreCase(paraulaComparada)){
+
+                    return posicio;
+                }
+                paraulaComparada = "";
+            }
+        }
+        if(paraula.equalsIgnoreCase(paraulaComparada)){
+
+            return posicio;
+        }
 
         return -1;
+    }
+    public static int numeroParaulaRepetida(String frase, String paraula){
+
+        String paraulaAComparada = "";
+        int repeticions = 0;
+
+        for(int i=0 ; i<frase.length() ; i++){
+
+            if(frase.charAt(i) != ' '){
+
+                paraulaAComparada += frase.charAt(i);
+
+            }else {
+
+                if (paraula.equalsIgnoreCase(paraulaAComparada)) {
+
+                    repeticions++;
+                }
+                paraulaAComparada = "";
+            }
+        }
+        return repeticions;
     }
     public static String paraulesAlReves(String paraules){
 
