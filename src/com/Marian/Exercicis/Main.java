@@ -14,7 +14,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Main {
+public class
+Main {
 
     public static void main(String[] args) {
 
@@ -147,12 +148,12 @@ public class Main {
 
         //System.out.println(ExercicisDiversos.posicioValorMinim(new int[] {6,4,5,3,7,5,6,9}));
         //System.out.println(ExercicisDiversos.numerosOrdenats(new int[] {1,2,3,4,5,6,7,8}));
-        System.out.println(Arrays.toString(ExercicisDiversos.arrayAlReves(new int[] {1,2,3,4,5})));
+        //System.out.println(Arrays.toString(ExercicisDiversos.arrayAlReves(new int[] {1,2,3,4,5})));
         //System.out.println(ExercicisDiversos.sabreIndex(new int[] {7,5,8,2,6,9},3));
         //System.out.println(Arrays.toString(ExercicisDiversos.canviarValorArray(new int [] {2,8,9,5}, 1)));
         //System.out.println(ExercicisDiversos.retornarTrueOFalse(new int[] {1,2,3,4,5}));
         //System.out.println(ExercicisDiversos.serieFubonacci(new int[] {1,1,2,3,5,8,13}));
-        //System.out.println(ExercicisDiversos.numeroMesRepetit(new int[] {7,2,3,2,6,2,3}));
+        System.out.println(ExercicisDiversos.numeroMesRepetit(new int[] {7,2,3,2,6,2,3}));
         //System.out.println(ExercicisDiversos.calcularFactorial(4));
         //System.out.println(ExercicisDiversos.paraulaMesLlargaAlReves("Mañana cuando puta llegaras"));
         //System.out.println(ExercicisDiversos.paraulesAlReves("Hola me nom Marian"));

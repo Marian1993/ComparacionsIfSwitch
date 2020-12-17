@@ -119,22 +119,29 @@ public class ExercicisDiversos {
     //incomplet
     public static int numeroMesRepetit(int[] numeros) {
 
-        int numMesRepetit = 0;
-        int numDeRepeticions = 0;
+        int contadorGlobal = 0;
+        int numeroGlobal = 0;
 
         for (int i = 0; i < numeros.length; i++) {
 
-            numMesRepetit = numeros[i];
+            int contador = 0;
+            int numero = 0;
 
             for (int j = 0; j < numeros.length; j++) {
-                if (numeros[j] == numMesRepetit) {
+                if (numeros[i] == numeros[j]) {
 
-                    numDeRepeticions++;
+                    contador++;
+                    numero = numeros[i];
                 }
+            }
+            if(contador>contadorGlobal){
+
+                contadorGlobal = contador;
+                numeroGlobal = numero;
             }
 
         }
-        return numMesRepetit;
+        return numeroGlobal;
     }
 
     public static int calcularFactorial(int numero) {
@@ -273,6 +280,8 @@ public class ExercicisDiversos {
         for(int i=0 ; i<paraules.length() ; i++){
 
             if(!(paraules.charAt(i) == ' ')){
+
+
 
                 paraulaGuardada += paraules.charAt(i);
             }else if(paraules.charAt(i) == ' '){
