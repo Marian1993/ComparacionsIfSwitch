@@ -34,10 +34,16 @@ public class ExercicisDiversos {
 
     public static int[] arrayAlReves(int[] numeros) {
 
+        int [] arrayInvertida = new int[numeros.length];
+        int auxiliar = 0;
+
         for (int i = numeros.length - 1; i >= 0; i--) {
 
+            arrayInvertida[auxiliar] = numeros[i];
+            auxiliar++;
+
         }
-        return numeros;
+        return arrayInvertida;
     }
 
     public static int sabreIndex(int[] numeros, int num) {

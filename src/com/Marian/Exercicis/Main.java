@@ -147,7 +147,7 @@ public class Main {
 
         //System.out.println(ExercicisDiversos.posicioValorMinim(new int[] {6,4,5,3,7,5,6,9}));
         //System.out.println(ExercicisDiversos.numerosOrdenats(new int[] {1,2,3,4,5,6,7,8}));
-        //System.out.println(Arrays.toString(ExercicisDiversos.arrayAlReves(new int[] {1,2,3,4,5})));
+        System.out.println(Arrays.toString(ExercicisDiversos.arrayAlReves(new int[] {1,2,3,4,5})));
         //System.out.println(ExercicisDiversos.sabreIndex(new int[] {7,5,8,2,6,9},3));
         //System.out.println(Arrays.toString(ExercicisDiversos.canviarValorArray(new int [] {2,8,9,5}, 1)));
         //System.out.println(ExercicisDiversos.retornarTrueOFalse(new int[] {1,2,3,4,5}));
@@ -159,7 +159,9 @@ public class Main {
         //System.out.println(Arrays.toString(ExercicisDiversos.swap(new int[] {2,6,3,4,1,8}, 3)));
         //System.out.println(ExercicisDiversos.posicioParaula("Hola me nom Marian ", "Marian"));
         //System.out.println(ExercicisDiversos.numeroParaulaRepetida("Hola Marian dema Marian avui Marian ","Marian"));
-        System.out.println(ExercicisDiversos.quantitatDeParaulaMesLlarga("Hola me nom Muro "));
+        //System.out.println(ExercicisDiversos.quantitatDeParaulaMesLlarga("Hola me nom Muro "));
+
+
     }
 }
 
