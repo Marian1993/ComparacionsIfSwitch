@@ -241,6 +241,7 @@ public class ExercicisDiversos {
         numeros[posicio] = max;
         numeros[index]=aux;
 
+
         return numeros;
     }
 }
