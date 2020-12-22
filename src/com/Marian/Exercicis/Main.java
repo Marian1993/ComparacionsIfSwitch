@@ -9,11 +9,13 @@ import com.Marian.Exercicis.ExercicisP.ExStrings;
 import com.Marian.Exercicis.ExercicisP.ExercicisDiversos;
 
 import java.lang.reflect.Array;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Main {
+public class
+Main {
 
     public static void main(String[] args) {
 
@@ -151,11 +153,16 @@ public class Main {
         //System.out.println(Arrays.toString(ExercicisDiversos.canviarValorArray(new int [] {2,8,9,5}, 1)));
         //System.out.println(ExercicisDiversos.retornarTrueOFalse(new int[] {1,2,3,4,5}));
         //System.out.println(ExercicisDiversos.serieFubonacci(new int[] {1,1,2,3,5,8,13}));
-        //System.out.println(ExercicisDiversos.numeroMesRepetit(new int[] {7,2,3,2,6,2,3}));
+        System.out.println(ExercicisDiversos.numeroMesRepetit(new int[] {7,2,3,2,6,2,3}));
         //System.out.println(ExercicisDiversos.calcularFactorial(4));
         //System.out.println(ExercicisDiversos.paraulaMesLlargaAlReves("Mañana cuando puta llegaras"));
         //System.out.println(ExercicisDiversos.paraulesAlReves("Hola me nom Marian"));
-        System.out.println(Arrays.toString(ExercicisDiversos.swap(new int[] {2,6,3,4,1,8}, 3)));
+        //System.out.println(Arrays.toString(ExercicisDiversos.swap(new int[] {2,6,3,4,1,8}, 3)));
+        //System.out.println(ExercicisDiversos.posicioParaula("Hola me nom Marian ", "Marian"));
+        //System.out.println(ExercicisDiversos.numeroParaulaRepetida("Hola Marian dema Marian avui Marian ","Marian"));
+        //System.out.println(ExercicisDiversos.quantitatDeParaulaMesLlarga("Hola me nom Muro "));
+
+
     }
 }
 

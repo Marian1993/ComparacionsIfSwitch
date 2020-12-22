@@ -34,10 +34,16 @@ public class ExercicisDiversos {
 
     public static int[] arrayAlReves(int[] numeros) {
 
+        int [] arrayInvertida = new int[numeros.length];
+        int auxiliar = 0;
+
         for (int i = numeros.length - 1; i >= 0; i--) {
 
+            arrayInvertida[auxiliar] = numeros[i];
+            auxiliar++;
+
         }
-        return numeros;
+        return arrayInvertida;
     }
 
     public static int sabreIndex(int[] numeros, int num) {
@@ -113,22 +119,29 @@ public class ExercicisDiversos {
     //incomplet
     public static int numeroMesRepetit(int[] numeros) {
 
-        int numMesRepetit = 0;
-        int numDeRepeticions = 0;
+        int contadorGlobal = 0;
+        int numeroGlobal = 0;
 
         for (int i = 0; i < numeros.length; i++) {
 
-            numMesRepetit = numeros[i];
+            int contador = 0;
+            int numero = 0;
 
             for (int j = 0; j < numeros.length; j++) {
-                if (numeros[j] == numMesRepetit) {
+                if (numeros[i] == numeros[j]) {
 
-                    numDeRepeticions++;
+                    contador++;
+                    numero = numeros[i];
                 }
+            }
+            if(contador>contadorGlobal){
+
+                contadorGlobal = contador;
+                numeroGlobal = numero;
             }
 
         }
-        return numMesRepetit;
+        return numeroGlobal;
     }
 
     public static int calcularFactorial(int numero) {
@@ -175,24 +188,89 @@ public class ExercicisDiversos {
 
     public static int quantitatDeParaulaMesLlarga(String frase) {
 
-        int numLlletres = 0;
+        int numActual = 0;
+        int numcomparacio = 0;
+        int numRepeticions = 0;
 
         for (int i = 0; i < frase.length(); i++) {
 
             if (frase.charAt(i) != ' ') {
 
-                numLlletres++;
+                numActual++;
 
-            } else if (frase.charAt(i) == ' ') {
+            } else{
+                if(numActual > numcomparacio) {
 
+                    numcomparacio = numActual;
+                }
+                numActual = 0;
             }
         }
-        return numLlletres;
+        for(int j=0 ; j<frase.length() ; j++){
+
+            if(frase.charAt(j) != ' '){
+                numActual++;
+            }else{
+
+                if(numActual == numcomparacio){
+                    numRepeticions++;
+                }
+                numActual = 0;
+            }
+        }
+        return numRepeticions;
 
     }
-    public static int posicioParaula(String frase){
+    public static int posicioParaula(String frase, String paraula){
+
+        String paraulaComparada = "";
+        int posicio = 0;
+
+        for(int i=0 ; i<frase.length() ; i++){
+
+            if(frase.charAt(i) != ' '){
+
+                paraulaComparada += frase.charAt(i);
+
+
+            }else{
+                posicio += 1;
+
+                if(paraula.equalsIgnoreCase(paraulaComparada)){
+
+                    return posicio;
+                }
+                paraulaComparada = "";
+            }
+        }
+        if(paraula.equalsIgnoreCase(paraulaComparada)){
+
+            return posicio;
+        }
 
         return -1;
+    }
+    public static int numeroParaulaRepetida(String frase, String paraula){
+
+        String paraulaAComparada = "";
+        int repeticions = 0;
+
+        for(int i=0 ; i<frase.length() ; i++){
+
+            if(frase.charAt(i) != ' '){
+
+                paraulaAComparada += frase.charAt(i);
+
+            }else {
+
+                if (paraula.equalsIgnoreCase(paraulaAComparada)) {
+
+                    repeticions++;
+                }
+                paraulaAComparada = "";
+            }
+        }
+        return repeticions;
     }
     public static String paraulesAlReves(String paraules){
 
@@ -202,6 +280,8 @@ public class ExercicisDiversos {
         for(int i=0 ; i<paraules.length() ; i++){
 
             if(!(paraules.charAt(i) == ' ')){
+
+
 
                 paraulaGuardada += paraules.charAt(i);
             }else if(paraules.charAt(i) == ' '){
