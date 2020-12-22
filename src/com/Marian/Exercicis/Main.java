@@ -3,10 +3,7 @@ package com.Marian.Exercicis;
 import com.Marian.Exercicis.Classes.*;
 import com.Marian.Exercicis.Classes.Poligonos.Quadrat;
 import com.Marian.Exercicis.Classes.Poligonos.Triangle;
-import com.Marian.Exercicis.ExercicisP.Bucles;
-import com.Marian.Exercicis.ExercicisP.Condicionales;
-import com.Marian.Exercicis.ExercicisP.ExStrings;
-import com.Marian.Exercicis.ExercicisP.ExercicisDiversos;
+import com.Marian.Exercicis.ExercicisP.*;
 
 import java.lang.reflect.Array;
 import java.sql.SQLOutput;
@@ -153,14 +150,17 @@ Main {
         //System.out.println(Arrays.toString(ExercicisDiversos.canviarValorArray(new int [] {2,8,9,5}, 1)));
         //System.out.println(ExercicisDiversos.retornarTrueOFalse(new int[] {1,2,3,4,5}));
         //System.out.println(ExercicisDiversos.serieFubonacci(new int[] {1,1,2,3,5,8,13}));
-        System.out.println(ExercicisDiversos.numeroMesRepetit(new int[] {7,2,3,2,6,2,3}));
+        //System.out.println(ExercicisDiversos.numeroMesRepetit(new int[] {7,2,3,2,6,2,3}));
         //System.out.println(ExercicisDiversos.calcularFactorial(4));
-        //System.out.println(ExercicisDiversos.paraulaMesLlargaAlReves("Mañana cuando puta llegaras"));
-        //System.out.println(ExercicisDiversos.paraulesAlReves("Hola me nom Marian"));
+        //System.out.println(ExercicisDiversos.paraulaMesLlargaAlReves("Mañana cuando puta llegaras "));
+        //System.out.println(ExercicisDiversos.paraulesAlReves("Hola me nom Marian "));
         //System.out.println(Arrays.toString(ExercicisDiversos.swap(new int[] {2,6,3,4,1,8}, 3)));
         //System.out.println(ExercicisDiversos.posicioParaula("Hola me nom Marian ", "Marian"));
         //System.out.println(ExercicisDiversos.numeroParaulaRepetida("Hola Marian dema Marian avui Marian ","Marian"));
         //System.out.println(ExercicisDiversos.quantitatDeParaulaMesLlarga("Hola me nom Muro "));
+
+        //System.out.println(Recopilacio.diferenciaManorMajor(new int[] {9,5,7,3,6,7}));
+        System.out.println(Recopilacio.complirSuccesio2(new int[] {1,2,2,4,8,32}));
 
 
     }

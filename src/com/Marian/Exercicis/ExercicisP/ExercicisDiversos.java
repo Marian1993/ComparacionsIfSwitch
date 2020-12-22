@@ -116,7 +116,6 @@ public class ExercicisDiversos {
         return esCompleix;
     }
 
-    //incomplet
     public static int numeroMesRepetit(int[] numeros) {
 
         int contadorGlobal = 0;
@@ -174,10 +173,6 @@ public class ExercicisDiversos {
                 }
                 paraulaActual = "";
             }
-        }
-        if (paraulaActual.length() > paraulaLlarga.length()) {
-
-            paraulaLlarga = paraulaActual;
         }
         for (int j = paraulaLlarga.length()-1; j >= 0; j--) {
 
@@ -280,10 +275,8 @@ public class ExercicisDiversos {
         for(int i=0 ; i<paraules.length() ; i++){
 
             if(!(paraules.charAt(i) == ' ')){
-
-
-
                 paraulaGuardada += paraules.charAt(i);
+
             }else if(paraules.charAt(i) == ' '){
 
                 for(int j=0 ; j<1 ; j++) {
@@ -295,12 +288,6 @@ public class ExercicisDiversos {
                 paraulaGuardada = "";
             }
         }
-        for(int j=0 ; j<1 ; j++) {
-
-            for( int z=paraulaGuardada.length()-1 ; z>=0 ; z-- )
-                paraulesInvertides += paraulaGuardada.charAt(z);
-        }
-        paraulesInvertides += " ";
 
         return paraulesInvertides;
     }
