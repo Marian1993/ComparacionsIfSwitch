@@ -159,10 +159,9 @@ Main {
         //System.out.println(ExercicisDiversos.numeroParaulaRepetida("Hola Marian dema Marian avui Marian ","Marian"));
         //System.out.println(ExercicisDiversos.quantitatDeParaulaMesLlarga("Hola me nom Muro "));
 
-        //System.out.println(Recopilacio.diferenciaManorMajor(new int[] {9,5,7,3,6,7}));
-        System.out.println(Recopilacio.complirSuccesio2(new int[] {1,2,2,4,8,32}));
-
-
+        //System.out.println(Recopilacio.exercici1(new int[] {9,5,7,3,6,7}));
+        //System.out.println(Recopilacio.exercici2(new int[] {1,2,2,4,8,32}));
+        System.out.println(Recopilacio.exercici3(new int[] {0,1,4,9,16}));
     }
 }
 
