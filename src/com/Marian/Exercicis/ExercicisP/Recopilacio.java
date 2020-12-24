@@ -73,8 +73,89 @@ public class Recopilacio {
         }
         return esCorrecte;
     }
-    public static int[] exercici4(int[] numeros){
+    /*public static int[] exercici4(int[] numeros){
 
+    }*/
 
+    public static int exercici5(String frase, char lletra1, char lletra2){
+
+        int repeticions = 0;
+        String[] fraseDefinitiva = frase.split(" ");
+
+        for(int i = 0; i < fraseDefinitiva.length;  i++){
+
+            for (int j = 0 ; j < fraseDefinitiva[i].length() ; j++){
+
+                if(fraseDefinitiva[i].charAt(fraseDefinitiva[i].length()-1) == 'l'){
+
+                }
+                else if(fraseDefinitiva[i].charAt(j) == 'l' && fraseDefinitiva[i].charAt(j+1) == 'a'){
+
+                    repeticions++;
+                }
+            }
+        }
+        return repeticions;
     }
+
+    public static int exercici6(char[] lletres, char lletra1, char lletra2){
+
+        int repeticions = 0;
+        int contador = 0;
+
+        for(int i = 0; i < lletres.length; i++){
+
+            if(lletres[i] == lletra1 && contador ==0){
+
+                contador++;
+            }
+            if(lletres[i] == lletra2 && contador ==1){
+
+                repeticions++;
+            }
+        }
+        return repeticions;
+    }
+
+    public static int exercici7 (int[] numeros){
+
+        double numMajor = 0;
+        double suma = 0;
+        double mitjana = 0;
+        double [] diferenciNumeros = new double[numeros.length];
+
+        for (int i = 0; i < numeros.length; i++) {
+
+            suma += numeros[i];
+        }
+        System.out.println(mitjana = suma/numeros.length);
+
+        for(int i = 0; i < numeros.length; i++){
+
+            diferenciNumeros[i] = Math.abs(numeros[i]-mitjana);
+        }
+        for(int i = 0; i < diferenciNumeros.length; i++){
+
+            if(numMajor<diferenciNumeros[i]){
+
+
+            }
+        }
+
+        return numero;
+    }
+    public static int numMayor(int[] numeros){
+
+        int numMayor = 0;
+
+        for( int i = 0; i < numeros.length; i++){
+
+            if(numMayor < numeros[i]){
+
+                numMayor = numeros [i];
+            }
+        }
+        return numMayor;
+    }
+
 }
