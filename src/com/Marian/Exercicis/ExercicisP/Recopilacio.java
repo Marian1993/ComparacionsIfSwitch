@@ -73,8 +73,9 @@ public class Recopilacio {
         }
         return esCorrecte;
     }
-    /*public static int[] exercici4(int[] numeros){
-
+    /*public static int exercici4(int[] numeros){
+        int total = 0;
+        return total;
     }*/
 
     public static int exercici5(String frase, char lletra1, char lletra2){
@@ -142,7 +143,7 @@ public class Recopilacio {
             }
         }
 
-        return numero;
+        return suma;
     }
     public static int numMayor(int[] numeros){
 
