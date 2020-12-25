@@ -73,10 +73,16 @@ public class Recopilacio {
         }
         return esCorrecte;
     }
-    /*public static int exercici4(int[] numeros){
-        int total = 0;
-        return total;
-    }*/
+    public static int exercici4(int[] numeros){
+        int contador = 2;
+        boolean primo=true;
+        while ((primo) && (contador!=numeros)){
+            if (numeros % contador == 0)
+                primo = false;
+            contador++;
+        }
+        return primo;
+    }
 
     public static int exercici5(String frase, char lletra1, char lletra2){
 
