@@ -135,7 +135,7 @@ public class Recopilacio {
         }
         return repeticions;
     }
-
+    //inacabat
     public static int exercici7 (int[] numeros){
 
         int index = 0;
