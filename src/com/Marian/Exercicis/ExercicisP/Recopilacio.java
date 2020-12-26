@@ -74,14 +74,26 @@ public class Recopilacio {
         return esCorrecte;
     }
     public static int exercici4(int[] numeros){
-        int contador = 2;
-        boolean primo=true;
-        while ((primo) && (contador!=numeros)){
-            if (numeros % contador == 0)
-                primo = false;
-            contador++;
+
+        int repeticions = 0;
+
+        for (int numero : numeros) {
+            int contador = 2;
+            boolean primo=true;
+
+            while ((primo) && (contador != numero)) {
+
+                if (numero % contador == 0) {
+                    primo = false;
+                }
+                contador++;
+            }
+            if (primo) {
+
+                repeticions++;
+            }
         }
-        return primo;
+        return repeticions;
     }
 
     public static int exercici5(String frase, char lletra1, char lletra2){
@@ -126,7 +138,7 @@ public class Recopilacio {
 
     public static int exercici7 (int[] numeros){
 
-        double numMajor = 0;
+        int index = 0;
         double suma = 0;
         double mitjana = 0;
         double [] diferenciNumeros = new double[numeros.length];
@@ -135,7 +147,6 @@ public class Recopilacio {
 
             suma += numeros[i];
         }
-        System.out.println(mitjana = suma/numeros.length);
 
         for(int i = 0; i < numeros.length; i++){
 
@@ -143,14 +154,16 @@ public class Recopilacio {
         }
         for(int i = 0; i < diferenciNumeros.length; i++){
 
-            if(numMajor<diferenciNumeros[i]){
+            if(diferenciNumeros[index]>diferenciNumeros[i]){
 
-
+                index = i;
             }
         }
 
-        return suma;
+        return numeros[index];
     }
+
+
     public static int numMayor(int[] numeros){
 
         int numMayor = 0;

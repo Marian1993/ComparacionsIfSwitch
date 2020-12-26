@@ -162,7 +162,7 @@ Main {
         //System.out.println(Recopilacio.exercici1(new int[] {9,5,7,3,6,7}));
         //System.out.println(Recopilacio.exercici2(new int[] {1,2,2,4,8,32}));
         //System.out.println(Recopilacio.exercici3(new int[] {0,1,4,9,16}));
-        //System.out.println(Recopilacio.exercici4(new int[] {9,5,7,3,6,7}));
+        //System.out.println(Recopilacio.exercici4(new int[] {9,5,7,3,6,12}));
         //System.out.println(Recopilacio.exercici5("Hola Puala dema es la festa", 'l', 'a'));
         //System.out.println(Recopilacio.exercici6(new char[] {'a','e','c','e','k','e'}, 'c','e'));
         System.out.println(Recopilacio.exercici7(new int[] {4,6,6,1,9}));
