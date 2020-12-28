@@ -135,7 +135,6 @@ public class Recopilacio {
         }
         return repeticions;
     }
-    //inacabat
     public static int exercici7 (int[] numeros){
 
         int index = 0;
@@ -147,7 +146,7 @@ public class Recopilacio {
 
             suma += numeros[i];
         }
-
+        mitjana = suma / numeros.length;
         for(int i = 0; i < numeros.length; i++){
 
             diferenciNumeros[i] = Math.abs(numeros[i]-mitjana);
@@ -161,6 +160,91 @@ public class Recopilacio {
         }
 
         return numeros[index];
+    }
+    public static String exercici8(String frase){
+
+        String paraula = "";
+        int quantitatFinal = 0;
+        String[] arrayFrase = frase.split(" ");
+        char [] vocals = {'a','e','i','o','u'};
+
+        for (int i = 0; i < arrayFrase.length; i++) {
+
+            int quantitat = 0;
+
+            for (int j = 0; j < arrayFrase[i].length(); j++) {
+
+                for (int k = 0; k < vocals.length; k++) {
+
+                    if(arrayFrase[i].charAt(j) == vocals[k]){
+
+                        quantitat++;
+                    }
+                }
+            }
+            if(quantitatFinal < quantitat){
+
+                paraula = arrayFrase[i];
+            }
+        }
+        return  paraula;
+    }
+    public static String exercici9(String frase){
+
+        String[] arrayFrase = frase.split(" ");
+        String fraseInversa = "";
+
+        for (int i = arrayFrase.length-1; i >= 0 ; i--) {
+
+            fraseInversa += arrayFrase[i]+" ";
+        }
+        return fraseInversa;
+    }
+    public static int exercici11(String frase){
+
+        int quantitatPalindromos = 0;
+        String [] arrayFrase = frase.split(" ");
+
+
+        for (int i = 0; i < arrayFrase.length; i++) {
+
+            boolean palindromo= false;
+            int fi = arrayFrase[i].length()-1;
+            int inici = 0;
+
+            for (int j = 0; j < arrayFrase[i].length()-1; j++) {
+
+                if(arrayFrase[i].charAt(inici) == arrayFrase[i].charAt(fi)){
+
+                    palindromo = true;
+                    fi--;
+                    inici++;
+                }else {
+                palindromo = false;
+                }
+            }
+            if (palindromo == true){
+                quantitatPalindromos++;
+            }
+        }
+        return quantitatPalindromos;
+    }
+
+    public static String exercici12(String frase){
+
+        String[] arrayFrase = frase.split(" ");
+        String fraseInversa = "";
+
+        for (int i = 0; i < arrayFrase.length; i++) {
+
+            for (int j = arrayFrase[i].length()-1; j >= 0; j--) {
+
+                fraseInversa += arrayFrase[i].charAt(j);
+
+            }
+            fraseInversa += " ";
+        }
+        return fraseInversa;
     }
 
 
