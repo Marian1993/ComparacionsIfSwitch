@@ -200,6 +200,25 @@ public class Recopilacio {
         }
         return fraseInversa;
     }
+    public static boolean exrcici10(int numero){
+
+        boolean perfecte = false;
+        int suma = 0;
+
+        for (int i = 1; i < numero; i++) {
+
+            if(numero % i == 0){
+
+                suma = suma + i;
+            }
+        }
+        if (suma  == numero){
+            perfecte = true;
+        }else {
+            perfecte = false;
+        }
+        return perfecte;
+    }
     public static int exercici11(String frase){
 
         int quantitatPalindromos = 0;
