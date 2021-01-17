@@ -3,6 +3,7 @@ package com.Marian.Exercicis;
 import com.Marian.Exercicis.Classes.*;
 import com.Marian.Exercicis.Classes.Poligonos.Quadrat;
 import com.Marian.Exercicis.Classes.Poligonos.Triangle;
+import com.Marian.Exercicis.ExExepcions.Exepcions;
 import com.Marian.Exercicis.ExercicisP.*;
 
 import java.lang.reflect.Array;
@@ -168,9 +169,12 @@ Main {
         //System.out.println(Recopilacio.exercici7(new int[] {4,6,6,1,9}));
         //System.out.println(Recopilacio.exercici8("dema anire en es camp mariana"));
         //System.out.println(Recopilacio.exercici9("Hola a tots"));
-        System.out.println(Recopilacio.exrcici10(6));
+        //System.out.println(Recopilacio.exrcici10(6));
         //System.out.println(Recopilacio.exercici11("ala madrid ala somos oso hoy"));
         //System.out.println(Recopilacio.exercici12("dema tornare tard"));
+
+        //Exepcions.exercici1();
+        Exepcions.exercici2();
 
     }
 }
