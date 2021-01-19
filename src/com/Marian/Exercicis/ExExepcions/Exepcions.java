@@ -30,19 +30,58 @@ public class Exepcions {
     }
     public static void exercici2(){
 
-        int numero = 0;
-        boolean continuar;
+        boolean continuar =  true;
+
         do{
             try{
-                continuar = false;
                 System.out.print("Posa un número: ");
-                numero = in.nextInt();
+                int numero = in.nextInt();
+                in.nextLine();
+                continuar = false;
 
             }catch (InputMismatchException e){
                 System.out.println("Has de posar números, no es poden posar paraules.");
-                in.nextInt();
-                continuar = true;
+                in.nextLine();
             }
         }while(continuar);
+    }
+    public static void exercici3(){
+
+        boolean continuar = true;
+
+        do {
+            try {
+                System.out.print("Posa un número: ");
+                int num = Integer.parseInt(in.nextLine());
+                continuar = false;
+
+            } catch (NumberFormatException e) {
+                System.out.println("Has de posar un número");
+            }
+        }while (continuar);
+    }
+    public static void exercici4(){
+
+        boolean continuar = true;
+
+        do{
+            try{
+                System.out.print("Escriu una paraula: ");
+                String paraula = in.nextLine();
+                System.out.print("Escriu una segona paraula: ");
+                String paraula2 = in.nextLine();
+
+                int divisio = paraula.length()/paraula2.length();
+                System.out.println("El resultat de divir el número de lletres que tenen les paraules es: " + divisio);
+                continuar = false;
+
+            }catch(NumberFormatException e){
+                System.out.println("Has de posar una paraula");
+
+            }catch (ArithmeticException e){
+                System.out.println("NO pots deixar un camp sense omplir");
+            }
+
+        }while (continuar);
     }
 }

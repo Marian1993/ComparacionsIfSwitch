@@ -174,7 +174,9 @@ Main {
         //System.out.println(Recopilacio.exercici12("dema tornare tard"));
 
         //Exepcions.exercici1();
-        Exepcions.exercici2();
+        //Exepcions.exercici2();
+        //Exepcions.exercici3();
+        Exepcions.exercici4();
 
     }
 }
