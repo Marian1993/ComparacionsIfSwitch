@@ -68,20 +68,25 @@ public class Exepcions {
             try{
                 System.out.print("Escriu una paraula: ");
                 String paraula = in.nextLine();
+                int num = Integer.parseInt(paraula);
                 System.out.print("Escriu una segona paraula: ");
                 String paraula2 = in.nextLine();
+                int num2 = Integer.parseInt(paraula2);
 
-                int divisio = paraula.length()/paraula2.length();
+                int divisio = num/num2;
                 System.out.println("El resultat de divir el número de lletres que tenen les paraules es: " + divisio);
                 continuar = false;
 
             }catch(NumberFormatException e){
-                System.out.println("Has de posar una paraula");
+                System.out.println("Has de posar una número");
 
             }catch (ArithmeticException e){
-                System.out.println("NO pots deixar un camp sense omplir");
+                System.out.println("No pots deixar un camp sense omplir");
             }
-
         }while (continuar);
+    }
+    public static void exercici5(){
+
+
     }
 }
