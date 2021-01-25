@@ -7,6 +7,7 @@ import com.Marian.Exercicis.ExExepcions.Exepcions;
 import com.Marian.Exercicis.ExercicisP.*;
 import com.Marian.Exercicis.Refactoritzar.Extraccions.*;
 import com.Marian.Exercicis.Classes.Persones.Persona;
+import com.Marian.Exercicis.Classes.Employee.*;
 
 import java.lang.reflect.Array;
 import java.sql.SQLOutput;
@@ -14,8 +15,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class
-Main {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -71,7 +71,11 @@ Main {
 
         capProjecte.setProjectes(projectes);*/
 
-       ExtracionsVariables.exercici5();
+        //Employee empleat = new Employee("KJ56LL","David",2384657,1250);
+        //Manager manager = new Manager("KL322D", "Maria", 823476, 2000, "Human Resources", 50000);
+        //Engineer engineer = new Engineer("FR324R", "Pedro", 943856,1450);
+        //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
+
 
 
 
