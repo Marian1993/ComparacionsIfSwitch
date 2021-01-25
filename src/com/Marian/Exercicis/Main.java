@@ -5,6 +5,8 @@ import com.Marian.Exercicis.Classes.Poligonos.Quadrat;
 import com.Marian.Exercicis.Classes.Poligonos.Triangle;
 import com.Marian.Exercicis.ExExepcions.Exepcions;
 import com.Marian.Exercicis.ExercicisP.*;
+import com.Marian.Exercicis.Refactoritzar.Extraccions.*;
+import com.Marian.Exercicis.Classes.Persones.Persona;
 
 import java.lang.reflect.Array;
 import java.sql.SQLOutput;
@@ -81,8 +83,8 @@ Main {
         //Ejercicio5Strings("cuando vas a venir");
         //ExStrings.Ejercicio6Strings("La luna no se ve");
 
-        /*Persona persona1= new Persona("David", 24, "45367721M", "Famella", 656789234);
-        System.out.println(persona1.toString());*/
+        //Persona persona1= new Persona("David", 24, "45367721M", "Famella", 656789234);
+        //System.out.println(persona1.toString());*/
 
         /*Alumne alumne1=new Alumne();
 
@@ -176,7 +178,14 @@ Main {
         //Exepcions.exercici1();
         //Exepcions.exercici2();
         //Exepcions.exercici3();
-        Exepcions.exercici4();
+        //Exepcions.exercici4();
+
+        //extractMethod.dadesPersona(persona1);
+        //extractMethod.imprimirArray();
+        //extractMethod.mitjananArray();
+        System.out.println(extractMethod.paraulaMesLlargaInvertida("demà anire a sa platja "));
+
+
 
     }
 }

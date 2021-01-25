@@ -9,11 +9,11 @@ public class extractMethod {
 
     private static Scanner sc = new Scanner(System.in);
 
-    public static void method0(Persona persona) {
+    public static void dadesPersona(Persona persona) {
         System.out.println("Dades de la persona: " + DadesPersona(persona));
     }
 
-    public static void method1() {
+    public static void imprimirArray() {
 
         int [] elements = new int[5];
 
@@ -21,21 +21,19 @@ public class extractMethod {
         retornarArray(elements);
     }
 
-    public static void method2() {
-
+    public static void mitjananArray() {
 
         int [] elements = new int[5];
-        int sum = 0;
+        double sum = 0;
         double average;
 
       introduirNunmerosArray(elements);
-      sumaTotaArray(elements, sum);
 
-        average = (double)sum / elements.length;
+        average = (double)sumaTotalArray(elements, sum) / elements.length;
         System.out.println("La suma és: " + average);
     }
 
-    public static String method3(String frase) {
+    public static String paraulaMesLlargaInvertida(String frase) {
         String paraulaActualInversa = "";
         String paraulaMesLlargaInversa = "";
 
@@ -51,6 +49,8 @@ public class extractMethod {
                 paraulaActualInversa = "";
             }
         }
+
+
         return paraulaMesLlargaInversa;
     }
 
@@ -71,7 +71,7 @@ public class extractMethod {
 
     private static String DadesPersona(Persona persona){
 
-        return"Nom: "  + persona.getName() + "Edat: " + persona.getAge();
+        return"\nNom: "  + persona.getName() + "\nEdat: " + persona.getAge();
     }
     private static void retornarArray(int[] num){
 
@@ -87,11 +87,15 @@ public class extractMethod {
             num[i] = sc.nextInt();
         }
     }
-    private static void sumaTotaArray(int[] num, int total){
+    private static double sumaTotalArray(int[] num, double total){
 
         for (int i = 0; i < num.length; i++) {
             total += num[i];
         }
+        return total;
     }
+    private static String invertirFrase(String frase){
 
+
+    }
 }
