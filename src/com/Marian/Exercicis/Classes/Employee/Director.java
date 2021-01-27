@@ -13,4 +13,12 @@ public class Director extends Manager{
 
         this.budget = budget;
     }
+
+    public String display(){
+
+        return "Manager: " + "\nID: " + getEmpID() + "\nName: " + getName()
+                + "\nSSN: " + getSsn() + "\nSalary: " + getSalary() +
+                "\nDepartament: " + getDepartment() + "\nBudget: " + budget
+                + "\nNumber of employees: " + getNumEmployee();
+    }
 }

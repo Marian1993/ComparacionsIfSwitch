@@ -44,17 +44,23 @@ public class Manager extends Employee{
         return false;
     }
 
+    public String getDepartment() {
+        return department;
+    }
 
+    public Employee[] getEmployees() {
+        return employees;
+    }
 
-
-
+    public int getNumEmployee() {
+        return numEmployee;
+    }
 
     public String display(){
 
         return "Manager: " + "\nID: " + getEmpID() + "\nName: " + getName()
                 + "\nSSN: " + getSsn() + "\nSalary: " + getSalary() +
-                "\nDepartament: " + department + "\nBudget: " + budget
-                + "\nNumber of employees: " + numEmployee;
+                "\nDepartament: " + department + "\nNumber of employees: " + numEmployee;
     }
 
 }
