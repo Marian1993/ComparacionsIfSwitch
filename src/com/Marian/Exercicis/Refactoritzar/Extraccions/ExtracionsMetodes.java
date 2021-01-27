@@ -33,12 +33,12 @@ public class ExtracionsMetodes {
 
     public static String paraulaMesLlargaInvertida(String frase) {
 
-        return invertirFrase(paraulaMesLlarga(frase));
+        return invertirString(paraulaMesLlarga(frase));
     }
 
     public static String method4(String frase) {
 
-        return invertirFrase(frase);
+        return invertirString(frase);
     }
 
     private static String DadesPersona(Persona persona) {
@@ -70,7 +70,7 @@ public class ExtracionsMetodes {
         return total/num.length;
     }
 
-    public static String invertirFrase(String frase) {
+    public static String invertirString(String frase) {
 
         String paraulaActual = "";
 

@@ -5,30 +5,26 @@ import java.util.ArrayList;
 public class Manager extends Employee{
 
     private String department;
-    private double budget;
     private Employee[] employees;
     private int numEmployee;
 
     public Manager(){}
     public Manager(String empID, String name, int ssn, double salary,
-                   String departament, double budget, Employee[] employees,
+                   String departament, Employee[] employees,
                    int numEmployee){
 
         super(empID, name, ssn, salary);
 
         this.department = departament;
-        this.budget = budget;
         this.employees = employees;
         this.numEmployee = numEmployee;
     }
 
-    public int findEmployee(Employee[] employee){
-
-        this.employees = employees;
+    public int findEmployee(Employee employee){
 
         for (int i = 0; i < employees.length; i++) {
 
-            if(employees[i].getName() == employee){
+            if(employees[i] == employee){
 
                 return i;
             }
@@ -41,7 +37,7 @@ public class Manager extends Employee{
 
         for (int i = 0; i < employees.length; i++) {
 
-            if (employees[i].getName())
+            if ()
 
         }
 

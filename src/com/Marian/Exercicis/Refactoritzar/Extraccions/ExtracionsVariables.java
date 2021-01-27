@@ -12,6 +12,10 @@ public class ExtracionsVariables {
     private static final int num = 10;
     private static boolean yFound = false;
     private static int counter = 0;
+    private static String paralabra = "lorem ipsum";
+    private static char lletra1 = 'x';
+    private static char lletra2 = 'y';
+
 
     public static boolean sabreSiEsMajorEdat(int age) {
         if (age < majoriaEdat) {
@@ -50,11 +54,11 @@ public class ExtracionsVariables {
 
     public static void exercici5() {
 
-        for (int i = 0; i < "lorem ipsum".length(); i++) {
-            if ("lorem ipsum".charAt(i) == 'y') {
+        for (int i = 0; i < paralabra.length(); i++) {
+            if (paralabra.charAt(i) == lletra2) {
                 yFound = true;
             }
-            if (yFound && "lorem ipsum".charAt(i) == 'x') {
+            if (yFound && paralabra.charAt(i) == lletra1) {
                 counter++;
             }
         }
