@@ -72,13 +72,39 @@ public class Main {
         capProjecte.setProjectes(projectes);*/
 
         //Employee empleat = new Employee("KJ56LL","David",2384657,1250);
-        //Manager manager = new Manager("KL322D", "Maria", 823476, 2000, "Human Resources", 50000);
         //Engineer engineer = new Engineer("FR324R", "Pedro", 943856,1450);
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
+        Employee empleat = new Employee("KJ56LL","David",2384333,1250);
+        Employee empleat1 = new Employee("KJ56GH","Maria",2384121,1250);
+        Employee empleat2 = new Employee("KJ34LL","Gerard",2383422,1250);
+        Employee empleat3 = new Employee("KT33LL","Laura",2384787,1250);
+        Employee empleat4 = new Employee("LI56LL","Aina",2384001,1250);
+
+        ArrayList<Employee> listEmployee = new ArrayList<Employee>();
 
 
+        Manager manager = new Manager("LL44KI","Joan", 3439833, 2000, "Recursos humans",
+                listEmployee, 20);
 
+
+        System.out.println(manager.addEmployee(empleat));
+        System.out.println(manager.addEmployee(empleat1));
+        System.out.println(manager.addEmployee(empleat2));
+        System.out.println(manager.addEmployee(empleat3));
+
+
+        System.out.println(manager.findEmployee(empleat2));
+
+        manager.printArray();
+
+        System.out.println();
+        System.out.println(manager.removeEmployee(empleat2));
+        manager.printArray();
+
+        System.out.println();
+        System.out.println();
+        manager.printStaffDetails();
 
 
 
