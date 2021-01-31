@@ -11,7 +11,6 @@ public class Engineer extends Employee{
 
     public String display(){
 
-        return "Engineer: " + "\nID: " + getEmpID() + "\nName: " + getName()
-                + "\nSSN: " + getSsn() + "\nSalary: " + getSalary();
+        return "Engineer: " + super.toString();
     }
 }

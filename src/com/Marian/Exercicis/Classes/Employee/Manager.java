@@ -82,16 +82,14 @@ public class Manager extends Employee{
         return numEmployee;
     }
 
-    public String display(){
+    public String toString(){
 
-        return "Manager: " + "\nID: " + getEmpID() + "\nName: " + getName()
-                + "\nSSN: " + getSsn() + "\nSalary: " + getSalary() +
+        return "Manager: " + super.toString() +
                 "\nDepartament: " + department + "\nNumber of employees: " + numEmployee;
     }
 
     public void printStaffDetails(){
-        System.out.println("Manager: " + "\nID: " + getEmpID() + "\nName: " + getName()
-                + "\nSSN: " + getSsn() + "\nSalary: " + getSalary() +
+        System.out.println("Manager: " + super.toString() +
                 "\nDepartament: " + department + "\nNumber of employees: " + numEmployee);
 
         for (int i = 0; i < employees.size(); i++) {

@@ -18,9 +18,7 @@ public class Director extends Manager{
 
     public String display(){
 
-        return "Director: " + "\nID: " + getEmpID() + "\nName: " + getName()
-                + "\nSSN: " + getSsn() + "\nSalary: " + getSalary() +
-                "\nDepartament: " + getDepartment() + "\nBudget: " + budget
-                + "\nNumber of employees: " + getNumEmployee();
+        return "Director: " + super.toString() + "\nNumber of employees: " + getNumEmployee() +
+                "\nDepartament: " + getDepartment() + "\nBudget: " + budget;
     }
 }

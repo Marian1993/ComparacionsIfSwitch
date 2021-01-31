@@ -30,9 +30,9 @@ public class Employee {
 
     public void salaryIncrease(double num){salary += salary*(num/100);}
 
-    public String display(){
+    public String toString(){
 
-        return "Employee: " + "\nID: " + empID + "\nName: " + name
+        return "\nID: " + empID + "\nName: " + name
                 + "\nSSN: " + ssn + "\nSalary: " + salary;
     }
 }

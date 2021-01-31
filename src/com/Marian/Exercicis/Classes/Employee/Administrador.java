@@ -11,8 +11,7 @@ public class Administrador extends Employee{
     }
     public String display(){
 
-        return "Administrador: " + "\nID: " + getEmpID() + "\nName: " + getName()
-                + "\nSSN: " + getSsn() + "\nSalary: " + getSalary();
+        return "Administrador: " + super.toString();
     }
 
 }
