@@ -88,6 +88,10 @@ public class Main {
                 listEmployee, 20);
 
 
+        Director director = new Director();
+        Administrador administrador = new Administrador();
+        Engineer engineer = new Engineer();
+
         System.out.println(manager.addEmployee(empleat));
         System.out.println(manager.addEmployee(empleat1));
         System.out.println(manager.addEmployee(empleat2));
@@ -107,6 +111,11 @@ public class Main {
         manager.printStaffDetails();
 
 
+        System.out.println(EmployeeStockPlan.printEmployee(director));
+        System.out.println(EmployeeStockPlan.printEmployee(manager));
+        System.out.println(EmployeeStockPlan.printEmployee(administrador));
+        System.out.println(EmployeeStockPlan.printEmployee(engineer));
+        System.out.println(EmployeeStockPlan.printEmployee(empleat));
 
     }
 }
