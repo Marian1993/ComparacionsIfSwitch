@@ -75,22 +75,22 @@ public class Main {
         //Engineer engineer = new Engineer("FR324R", "Pedro", 943856,1450);
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
-        /*Employee empleat = new Employee("KJ56LL","David",2384333,1250);
+        Employee empleat = new Employee("KJ56LL","David",2384333,1250);
         Employee empleat1 = new Employee("KJ56GH","Maria",2384121,1250);
         Employee empleat2 = new Employee("KJ34LL","Gerard",2383422,1250);
         Employee empleat3 = new Employee("KT33LL","Laura",2384787,1250);
         Employee empleat4 = new Employee("LI56LL","Aina",2384001,1250);
 
-        ArrayList<Employee> listEmployee = new ArrayList<Employee>();
-
 
         Manager manager = new Manager("LL44KI","Joan", 3439833, 2000, "Recursos humans",
-                listEmployee, 20);
+                new Employee[] {}, 0);
 
 
         Employee director = new Director();
         Administrador administrador = new Administrador("LL40OI","Paula", 3432103, 2000,"mobils");
         Engineer engineer = new Engineer();
+
+        System.out.println(manager.findEmployee(empleat2));
 
         System.out.println(manager.addEmployee(empleat));
         System.out.println(manager.addEmployee(empleat1));
@@ -98,27 +98,8 @@ public class Main {
         System.out.println(manager.addEmployee(empleat3));
 
 
-        System.out.println(manager.findEmployee(empleat2));
-
-        manager.printArray();
-
-        System.out.println();
-        System.out.println(manager.removeEmployee(empleat2));
-        manager.printArray();
-
-        System.out.println();
-        System.out.println();
-        manager.printStaffDetails();
 
 
-        System.out.println(EmployeeStockPlan.printEmployee(director));
-        System.out.println(EmployeeStockPlan.printEmployee(manager));
-        System.out.println(EmployeeStockPlan.printEmployee(administrador));
-        System.out.println(EmployeeStockPlan.printEmployee(engineer));
-        System.out.println(EmployeeStockPlan.printEmployee(empleat));
-
-        administrador.hire(empleat2);
-        administrador.plan();*/
 
 
     }

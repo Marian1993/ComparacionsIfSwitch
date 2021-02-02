@@ -5,13 +5,13 @@ import java.util.ArrayList;
 public class Manager extends Employee implements Managment{
 
     private String department;
-    private ArrayList<Employee> employees;
+    private Employee[] employees;
     private int numEmployee;
 
 
     public Manager(){}
     public Manager(String empID, String name, int ssn, double salary,
-                   String departament, ArrayList<Employee> employees,
+                   String departament, Employee[] employees,
                    int numEmployee ){
 
         super(empID, name, ssn, salary);
@@ -23,12 +23,13 @@ public class Manager extends Employee implements Managment{
 
     public int findEmployee(Employee employee){
 
-        for (int i = 0; i < employees.size(); i++) {
+        for (int i = 0; i < employees.length; i++) {
 
-            if(employees.get(i) == employee){
+            if(employees[i] == employee){
 
                 return i;
             }
+            numEmployee++;
         }
         return -1;
     }
@@ -36,7 +37,9 @@ public class Manager extends Employee implements Managment{
 
         if(numEmployee >= 20 && findEmployee(employee) == -1) {
 
-            employees.add(employee);
+            employees[numEmployee] = employee;
+            numEmployee++;
+
             return "The employee has been added to the list";
         }else{
         return "The employee already on the list";
@@ -44,11 +47,12 @@ public class Manager extends Employee implements Managment{
     }
     public boolean removeEmployee(Employee employee){
 
-        for (int i = 0; i <employees.size(); i++) {
+        for (int i = 0; i <employees.length; i++) {
 
-            if(employees.get(i) == employee){
+            if(findEmployee(employee) == i ){
 
-                employees.remove(i);
+                employees[i] = null;
+
 
                 return true;
             }
@@ -61,10 +65,10 @@ public class Manager extends Employee implements Managment{
     }
     public void printArray(){
 
-        for (int i = 0; i < employees.size(); i++) {
+        for (int i = 0; i < employees.length; i++) {
 
-            System.out.println("\nPosition in the array: " + i + "\nID: " + employees.get(i).getEmpID() + "\nName: " + employees.get(i).getName()
-                    + "\nSSN: " + employees.get(i).getSsn() + "\nSalary: " + employees.get(i).getSalary());
+            System.out.println("\nPosition in the array: " + i + "\nID: " + getEmpID() + "\nName: " + getName()
+                    + "\nSSN: " + getSsn() + "\nSalary: " + getSalary());
 
         }
     }
@@ -83,11 +87,11 @@ public class Manager extends Employee implements Managment{
         System.out.println("Manager: " + super.toString() +
                 "\nDepartament: " + department + "\nNumber of employees: " + numEmployee);
 
-        for (int i = 0; i < employees.size(); i++) {
+        for (int i = 0; i < employees.length; i++) {
 
 
-            System.out.println("\nEmployee: " + "\nPosition in the array: " + i + "\nID: " + employees.get(i).getEmpID() + "\nName: " + employees.get(i).getName()
-                    + "\nSSN: " + employees.get(i).getSsn() + "\nSalary: " + employees.get(i).getSalary());
+            System.out.println("\nEmployee: " + "\nPosition in the array: " + i + "\nID: " + getEmpID() + "\nName: " + getName()
+                    + "\nSSN: " + getSsn() + "\nSalary: " + getSalary());
 
         }
     }
@@ -100,6 +104,6 @@ public class Manager extends Employee implements Managment{
 
     @Override
     public void hire(Employee e) {
-        employees.add(e);
+        addEmployee(e);
     }
 }

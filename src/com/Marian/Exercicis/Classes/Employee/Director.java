@@ -9,7 +9,7 @@ public class Director extends Manager{
     public Director(){}
 
     public Director(String empID, String name, int ssn, double salary, String departament,
-                    double budget, ArrayList<Employee> employees, int numEmployee){
+                    double budget, Employee[] employees, int numEmployee){
 
         super(empID, name, ssn, salary, departament,employees,numEmployee);
 
