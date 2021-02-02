@@ -2,16 +2,17 @@ package com.Marian.Exercicis.Classes.Employee;
 
 import java.util.ArrayList;
 
-public class Manager extends Employee{
+public class Manager extends Employee implements Managment{
 
     private String department;
     private ArrayList<Employee> employees;
     private int numEmployee;
 
+
     public Manager(){}
     public Manager(String empID, String name, int ssn, double salary,
                    String departament, ArrayList<Employee> employees,
-                   int numEmployee){
+                   int numEmployee ){
 
         super(empID, name, ssn, salary);
 
@@ -33,23 +34,13 @@ public class Manager extends Employee{
     }
     public String addEmployee(Employee employee){
 
-        boolean found = false;
-        int count = 0;
-
-        for (int i = 0; i < employees.size(); i++) {
-
-            if (employees.get(i) == employee) {
-
-                found = true;
-            }
-        count++;
-        }
-        if(numEmployee >= count&& found == false) {
+        if(numEmployee >= 20 && findEmployee(employee) == -1) {
 
             employees.add(employee);
             return "The employee has been added to the list";
-        }
+        }else{
         return "The employee already on the list";
+        }
     }
     public boolean removeEmployee(Employee employee){
 
@@ -99,5 +90,16 @@ public class Manager extends Employee{
                     + "\nSSN: " + employees.get(i).getSsn() + "\nSalary: " + employees.get(i).getSalary());
 
         }
+    }
+
+    @Override
+    public void plan() {
+        System.out.println("S'ha fet una plinificació en el departament de" + department +
+                ", i la persona encarregada d'aquest projecte es na " + getName());
+    }
+
+    @Override
+    public void hire(Employee e) {
+        employees.add(e);
     }
 }

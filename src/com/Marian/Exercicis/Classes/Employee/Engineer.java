@@ -9,7 +9,7 @@ public class Engineer extends Employee{
         super(empID, name, ssn, salary);
     }
 
-    public String display(){
+    public String toString(){
 
         return "Engineer: " + super.toString();
     }
