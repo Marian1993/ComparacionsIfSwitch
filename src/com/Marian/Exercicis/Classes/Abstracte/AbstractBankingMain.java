@@ -9,7 +9,7 @@ public class AbstractBankingMain {
         initializeCustomers(bank);
 
         // run the customer report
-        CustomerReport report = new CustomerReport();
+        CustomerReport report = new CustomerReport(234.23,bank);
         report.setBank(bank);
         report.generateReport();
     }

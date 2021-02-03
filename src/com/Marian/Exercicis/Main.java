@@ -1,6 +1,7 @@
 package com.Marian.Exercicis;
 
 import com.Marian.Exercicis.Classes.*;
+import com.Marian.Exercicis.Classes.Abstracte.TimeDepositAccount;
 import com.Marian.Exercicis.Classes.Poligonos.Quadrat;
 import com.Marian.Exercicis.Classes.Poligonos.Triangle;
 import com.Marian.Exercicis.ExExepcions.Exepcions;
@@ -14,6 +15,7 @@ import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Date;
 
 public class Main {
 
@@ -83,8 +85,7 @@ public class Main {
 
 
         Manager manager = new Manager("LL44KI","Joan", 3439833, 2000, "Recursos humans",
-                new Employee[] {}, 0);
-
+                new Employee[20], 0);
 
         Employee director = new Director();
         Administrador administrador = new Administrador("LL40OI","Paula", 3432103, 2000,"mobils");
@@ -97,9 +98,11 @@ public class Main {
         System.out.println(manager.addEmployee(empleat2));
         System.out.println(manager.addEmployee(empleat3));
 
+        System.out.println(manager.findEmployee(empleat2));
 
+        System.out.println(manager.removeEmployee(empleat2));
 
-
+        manager.printArray();
 
 
     }

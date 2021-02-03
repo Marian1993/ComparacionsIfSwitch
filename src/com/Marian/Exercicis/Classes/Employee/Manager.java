@@ -29,13 +29,12 @@ public class Manager extends Employee implements Managment{
 
                 return i;
             }
-            numEmployee++;
         }
         return -1;
     }
     public String addEmployee(Employee employee){
 
-        if(numEmployee >= 20 && findEmployee(employee) == -1) {
+        if(numEmployee <= 20 && findEmployee(employee) == -1) {
 
             employees[numEmployee] = employee;
             numEmployee++;
@@ -49,14 +48,21 @@ public class Manager extends Employee implements Managment{
 
         for (int i = 0; i <employees.length; i++) {
 
-            if(findEmployee(employee) == i ){
+            if(employees[i] == employee){
 
                 employees[i] = null;
-
-
-                return true;
             }
         }
+        for (int i = 0; i < employees.length; i++) {
+
+            if(employees[i] == null && employees[i+1] != null){
+
+                employees[i] = employees[i+1];
+                employees[i+1] = null;
+            }
+
+        }
+
         return false;
     }
 
@@ -67,9 +73,10 @@ public class Manager extends Employee implements Managment{
 
         for (int i = 0; i < employees.length; i++) {
 
-            System.out.println("\nPosition in the array: " + i + "\nID: " + getEmpID() + "\nName: " + getName()
-                    + "\nSSN: " + getSsn() + "\nSalary: " + getSalary());
-
+            if(employees[i] != null) {
+                System.out.println("\nPosition in the array: " + i + "\nID: " + employees[i].getEmpID() + "\nName: " +
+                        employees[i].getName() + "\nSSN: " + employees[i].getSsn() + "\nSalary: " + employees[i].getSalary());
+            }
         }
     }
 

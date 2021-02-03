@@ -1,8 +1,16 @@
 package com.Marian.Exercicis.Classes.Abstracte;
 
-public class CustomerReport {
+public class CustomerReport extends Account{
 
     private Bank bank;
+
+
+    public CustomerReport(double balance, Bank bank){
+
+        super(balance);
+
+        this.bank = bank;
+    }
 
     public Bank getBank() {
         return bank;
@@ -35,6 +43,20 @@ public class CustomerReport {
                 // Print the current balance of the account
                 System.out.println("    " + account);
             }
+        }
+    }
+
+    @Override
+    public String getDescription() { return "In this bank " + bank + " have " + balance;
+    }
+
+    @Override
+    public boolean withdraw(double amount) {
+        if(amount <= balance) {
+            balance -= amount;
+            return true;
+        } else {
+            return false;
         }
     }
 }
