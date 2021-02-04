@@ -46,24 +46,30 @@ public class Manager extends Employee implements Managment{
     }
     public boolean removeEmployee(Employee employee){
 
+        Employee[] newEmployee = new Employee[employees.length];
+        boolean found = false;
+        int position = 0;
+
         for (int i = 0; i <employees.length; i++) {
 
             if(employees[i] == employee){
 
                 employees[i] = null;
+                found = true;
+            }else {
+                newEmployee[position] = employees[i];
+                position++;
             }
         }
-        for (int i = 0; i < employees.length; i++) {
+        for (int i = 0; i < newEmployee.length; i++) {
 
-            if(employees[i] == null && employees[i+1] != null){
-
-                employees[i] = employees[i+1];
-                employees[i+1] = null;
-            }
-
+            employees[i] = newEmployee[i];
         }
-
-        return false;
+        if (found){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     public String getDepartment() {

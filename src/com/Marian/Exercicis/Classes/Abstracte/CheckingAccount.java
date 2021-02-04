@@ -24,10 +24,11 @@ public class CheckingAccount extends Account{
 
     @Override
     public boolean withdraw(double amount) {
-        if(amount <= balance) {
-            balance -= amount;
+
+        if((balance -= amount) >= overDraftLimit){
+
             return true;
-        } else {
+        }else {
             return false;
         }
     }

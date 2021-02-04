@@ -42,7 +42,7 @@ public class Customer extends Account{
     }
 
     @Override
-    public String getDescription() { return "Thios person  " + firstName  + lastName + " have " +
+    public String getDescription() { return "This person  " + firstName  + lastName + " have " +
             numberOfAccounts + numberOfAccounts;
     }
     public boolean withdraw(double amount) {

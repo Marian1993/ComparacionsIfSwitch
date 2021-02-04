@@ -1,6 +1,7 @@
 package com.Marian.Exercicis;
 
 import com.Marian.Exercicis.Classes.*;
+import com.Marian.Exercicis.Classes.Abstracte.CheckingAccount;
 import com.Marian.Exercicis.Classes.Abstracte.TimeDepositAccount;
 import com.Marian.Exercicis.Classes.Poligonos.Quadrat;
 import com.Marian.Exercicis.Classes.Poligonos.Triangle;
@@ -103,7 +104,6 @@ public class Main {
         System.out.println(manager.removeEmployee(empleat2));
 
         manager.printArray();
-
 
     }
 }
