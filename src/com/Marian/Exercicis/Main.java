@@ -1,22 +1,6 @@
 package com.Marian.Exercicis;
 
-import com.Marian.Exercicis.Classes.*;
-import com.Marian.Exercicis.Classes.Abstracte.CheckingAccount;
-import com.Marian.Exercicis.Classes.Abstracte.TimeDepositAccount;
-import com.Marian.Exercicis.Classes.Poligonos.Quadrat;
-import com.Marian.Exercicis.Classes.Poligonos.Triangle;
-import com.Marian.Exercicis.ExExepcions.Exepcions;
-import com.Marian.Exercicis.ExercicisP.*;
-import com.Marian.Exercicis.Refactoritzar.Extraccions.*;
-import com.Marian.Exercicis.Classes.Persones.Persona;
 import com.Marian.Exercicis.Classes.Employee.*;
-
-import java.lang.reflect.Array;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
 
 public class Main {
 

@@ -1,19 +1,30 @@
-package com.Marian.Exercicis.Classes.Abstracte;
+package com.Marian.Exercicis.Classes.AbstractionAndEnum;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public class TimeDepositAccount extends  Account{
 
-    private final Date maturityDate;
+    private Date maturityDate;
+
+    DepositLenght threeMonths = DepositLenght.THREE_MONTHS;
+    DepositLenght sixMonths = DepositLenght.SIX_MONTHS;
+
+    Calendar calendar = Calendar.getInstance();
     
-    public TimeDepositAccount(double balance, Date maturityDate) {
+
+
+    public TimeDepositAccount(double balance, DepositLenght threeMonths, DepositLenght sixMonths) {
         super(balance);
-        this.maturityDate = maturityDate;
+
+        this.threeMonths = threeMonths;
+        this.sixMonths = sixMonths;
     }
     @Override
     public String toString() {
         return getDescription() + ": current balance is " + balance;
     }
+
 
     public boolean withdraw(double amount) {
         Date today = new Date();

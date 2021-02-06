@@ -1,6 +1,4 @@
-package com.Marian.Exercicis.Classes.Abstracte;
-
-import java.util.Date;
+package com.Marian.Exercicis.Classes.AbstractionAndEnum;
 
 public abstract class Account{
 

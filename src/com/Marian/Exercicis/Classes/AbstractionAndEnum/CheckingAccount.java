@@ -1,4 +1,4 @@
-package com.Marian.Exercicis.Classes.Abstracte;
+package com.Marian.Exercicis.Classes.AbstractionAndEnum;
 
 public class CheckingAccount extends Account{
 
