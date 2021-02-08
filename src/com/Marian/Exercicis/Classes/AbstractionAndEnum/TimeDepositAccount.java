@@ -6,19 +6,14 @@ import java.util.Date;
 public class TimeDepositAccount extends  Account{
 
     private Date maturityDate;
-
-    DepositLenght threeMonths = DepositLenght.THREE_MONTHS;
-    DepositLenght sixMonths = DepositLenght.SIX_MONTHS;
-
-    Calendar calendar = Calendar.getInstance();
     
 
-
-    public TimeDepositAccount(double balance, DepositLenght threeMonths, DepositLenght sixMonths) {
+    public TimeDepositAccount(double balance, DepositLenght deposit) {
         super(balance);
 
-        this.threeMonths = threeMonths;
-        this.sixMonths = sixMonths;
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.DAY_OF_YEAR, deposit.getDays());
+        this.maturityDate = calendar.getTime();
     }
     @Override
     public String toString() {

@@ -54,22 +54,15 @@ public class Manager extends Employee implements Managment{
 
             if(employees[i] == employee){
 
-                employees[i] = null;
                 found = true;
             }else {
                 newEmployee[position] = employees[i];
                 position++;
             }
         }
-        for (int i = 0; i < newEmployee.length; i++) {
+        employees = newEmployee;
 
-            employees[i] = newEmployee[i];
-        }
-        if (found){
-            return true;
-        }else {
-            return false;
-        }
+   return found;
     }
 
     public String getDepartment() {
