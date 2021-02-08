@@ -10,6 +10,7 @@ public class Bank {
         numberOfCustomers = 0;
     }
 
+
     public void addCustomer(String f, String l) {
         int i = numberOfCustomers++;
         customers[i] = new Customer(213.53,f, l);

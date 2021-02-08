@@ -21,4 +21,8 @@ public class Director extends Manager{
         return "Director: " + super.toString() + "\nNumber of employees: " + getNumEmployee() +
                 "\nDepartament: " + getDepartment() + "\nBudget: " + budget;
     }
+
+    public double getBudget() {
+        return budget;
+    }
 }
