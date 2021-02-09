@@ -8,11 +8,11 @@ public class TimeDepositAccount extends  Account{
     private Date maturityDate;
     
 
-    public TimeDepositAccount(double balance, DepositLenght deposit) {
+    public TimeDepositAccount(double balance, DepositLenght duration) {
         super(balance);
 
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_YEAR, deposit.getDays());
+        calendar.add(Calendar.DAY_OF_YEAR, duration.getDays());
         this.maturityDate = calendar.getTime();
     }
     @Override

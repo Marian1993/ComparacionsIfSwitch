@@ -110,6 +110,10 @@ public class Manager extends Employee implements Managment{
 
     @Override
     public void hire(Employee e) {
-        addEmployee(e);
+        if(numEmployee <= 20 && findEmployee(e) == -1) {
+
+            employees[numEmployee] = e;
+            numEmployee++;
+        }
     }
 }
