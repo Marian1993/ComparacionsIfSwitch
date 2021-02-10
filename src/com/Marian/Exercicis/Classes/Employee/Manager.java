@@ -34,7 +34,6 @@ public class Manager extends Employee implements Managment{
     }
     public String addEmployee(Employee employee){
 
-
         if(numEmployee <= 20 && findEmployee(employee) == -1) {
 
             employees[numEmployee] = employee;
@@ -61,10 +60,9 @@ public class Manager extends Employee implements Managment{
                 position++;
             }
         }
-
         employees = newEmployee;
 
-     return found;
+   return found;
     }
 
     public String getDepartment() {
@@ -74,10 +72,9 @@ public class Manager extends Employee implements Managment{
 
         for (int i = 0; i < employees.length; i++) {
 
-            if( employees[i] != null) {
+            if(employees[i] != null) {
                 System.out.println("\nPosition in the array: " + i + "\nID: " + employees[i].getEmpID() + "\nName: " +
                         employees[i].getName() + "\nSSN: " + employees[i].getSsn() + "\nSalary: " + employees[i].getSalary());
-
             }
         }
     }
@@ -113,6 +110,10 @@ public class Manager extends Employee implements Managment{
 
     @Override
     public void hire(Employee e) {
-        addEmployee(e);
+        if(numEmployee <= 20 && findEmployee(e) == -1) {
+
+            employees[numEmployee] = e;
+            numEmployee++;
+        }
     }
 }
