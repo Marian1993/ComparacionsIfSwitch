@@ -1,6 +1,8 @@
 package com.Marian.Exercicis;
 
 import com.Marian.Exercicis.Classes.Employee.*;
+import com.Marian.Exercicis.Refactoritzar.Customer;
+import com.Marian.Exercicis.Refactoritzar.EliminarAssignacioParametre;
 
 public class Main {
 
@@ -62,34 +64,14 @@ public class Main {
         //Engineer engineer = new Engineer("FR324R", "Pedro", 943856,1450);
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
-        Employee empleat = new Employee("KJ56LL","David",2384333,1250);
-        Employee empleat1 = new Employee("KJ56GH","Maria",2384121,1250);
-        Employee empleat2 = new Employee("KJ34LL","Gerard",2383422,1250);
-        Employee empleat3 = new Employee("KT33LL","Laura",2384787,1250);
-        Employee empleat4 = new Employee("LI56LL","Aina",2384001,1250);
 
 
-        Manager manager = new Manager("LL44KI","Joan", 3439833, 2000, "Recursos humans",
-                new Employee[20], 0);
 
-        Employee director = new Director();
-        Administrador administrador = new Administrador("LL40OI","Paula", 3432103, 2000,"mobils");
-        Engineer engineer = new Engineer();
+        Customer customer = new Customer(false,true,0);
 
-        System.out.println(manager.findEmployee(empleat2));
-
-        System.out.println(manager.addEmployee(empleat));
-        System.out.println(manager.addEmployee(empleat1));
-        System.out.println(manager.addEmployee(empleat2));
-        System.out.println(manager.addEmployee(empleat3));
-
-        System.out.println(manager.findEmployee(empleat2));
-
-        System.out.println(manager.removeEmployee(empleat2));
-
-        manager.printArray();
-
+        System.out.println(customer.applyDiscount(4566,23.87));
     }
+
 }
 
 
