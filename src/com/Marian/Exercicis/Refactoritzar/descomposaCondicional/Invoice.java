@@ -36,8 +36,9 @@ public class Invoice {
 
     public float calculateTotal2 (float vat, float discount) {
         float subtotal = (price * qty);
-        float subDiscount = (price * qty) - discount;
+        float subDiscount = subtotal - discount;
         float impost = 1 + (vat / 100);
+
         if (customer.isVip()) {
             subDiscount = subDiscount * impost;
             return subDiscount;
