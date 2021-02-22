@@ -69,7 +69,6 @@ public class Main {
 
         Customer customer = new Customer(false,true,0);
 
-        System.out.println(customer.applyDiscount(4566,23.87));
     }
 
 }

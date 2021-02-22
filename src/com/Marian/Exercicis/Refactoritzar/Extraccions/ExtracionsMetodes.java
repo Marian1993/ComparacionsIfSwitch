@@ -46,7 +46,7 @@ public class ExtracionsMetodes {
         return "\nNom: " + persona.getName() + "\nEdat: " + persona.getAge();
     }
 
-    public static void retornarArray(int[] num) {
+    private static void retornarArray(int[] num) {
 
         System.out.println("Els números introduïts són:");
         for (int i = 0; i < num.length; i++) {
@@ -54,7 +54,7 @@ public class ExtracionsMetodes {
         }
     }
 
-    public static void introduirNunmerosArray(int[] num) {
+    private static void introduirNunmerosArray(int[] num) {
 
         for (int i = 0; i < num.length; i++) {
             System.out.print("Introdueix un número: ");
@@ -70,7 +70,7 @@ public class ExtracionsMetodes {
         return total/num.length;
     }
 
-    public static String invertirString(String frase) {
+    private static String invertirString(String frase) {
 
         String paraulaActual = "";
 
