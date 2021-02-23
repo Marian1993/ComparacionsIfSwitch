@@ -3,14 +3,14 @@ package com.Marian.Exercicis.Refactoritzar.Extraccions;
 import com.Marian.Exercicis.Classes.Persones.Persona;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class ExtracionsMetodes {
 
     private static Scanner sc = new Scanner(System.in);
 
     public static void dadesPersona(Persona persona) {
-        System.out.println("Dades de la persona: " + DadesPersona(persona));
+
+        System.out.println("Dades de la persona: " + persona(persona));
     }
 
     public static void imprimirArray() {
@@ -33,15 +33,15 @@ public class ExtracionsMetodes {
 
     public static String paraulaMesLlargaInvertida(String frase) {
 
-        return invertirString(paraulaMesLlarga(frase));
+        return invertirFrase(paraulaMesLlarga(frase));
     }
 
-    public static String method4(String frase) {
+    public static String invertirParaula(String frase) {
 
-        return invertirString(frase);
+        return invertirFrase(frase);
     }
 
-    private static String DadesPersona(Persona persona) {
+    private static String persona(Persona persona) {
 
         return "\nNom: " + persona.getName() + "\nEdat: " + persona.getAge();
     }
@@ -70,7 +70,7 @@ public class ExtracionsMetodes {
         return total/num.length;
     }
 
-    private static String invertirString(String frase) {
+    private static String invertirFrase(String frase) {
 
         String paraulaActual = "";
 
