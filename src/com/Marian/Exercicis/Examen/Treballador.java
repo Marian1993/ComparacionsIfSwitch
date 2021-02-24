@@ -16,9 +16,8 @@ public class Treballador {
 
     public int estimacioSou(Treballador treballador, int souInicial) {
 
-        Sou.estimacioSou(treballador, souInicial);
+        return Sou.estimacioSou(treballador, souInicial);
 
-        return souInicial;
     }
 
     public int getTipus() {

@@ -10,9 +10,8 @@ public class Sou {
 
     public static int estimacioSou(Treballador treballador, int souInicial) {
 
-        plusDeCategoria(treballador,experienciaLaboral(treballador, souInicial));
+        return plusDeCategoria(treballador,experienciaLaboral(treballador, souInicial));
 
-        return souInicial;
     }
 
     public static int experienciaLaboral(Treballador treballador, int souInicial){

@@ -4,6 +4,8 @@ import com.Marian.Exercicis.Classes.Employee.*;
 import com.Marian.Exercicis.Refactoritzar.Customer;
 import com.Marian.Exercicis.Refactoritzar.EliminarAssignacioParametre;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -64,13 +66,43 @@ public class Main {
         //Engineer engineer = new Engineer("FR324R", "Pedro", 943856,1450);
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
+        /*int[] num = {5,3,1,4,2,9,12,8,10,6,13,7,11,8};
+
+        Arrays.sort(num);
+
+        for (int i = 0; i < num.length; i++) {
+
+            System.out.println(num[i]);
+        }*/
 
 
+        int[] num = {5,3,1,4,2,9,12,8,10,6,13,7,11};
 
-        Customer customer = new Customer(false,true,0);
+        int indexMesPetit = 0;
+        int indexComparacio = 0;
 
+        for (int i = 0; i < num.length; i++) {
+
+            int numAuxiliar = 0;
+
+            for (int j = 0; j < num.length; j++) {
+
+                if(num[indexMesPetit] > num[j]){
+
+                    indexMesPetit = j;
+                }
+            }
+            numAuxiliar = num[indexComparacio];
+            num[indexComparacio] = num[indexMesPetit];
+            num[indexMesPetit] = num[numAuxiliar];
+            indexComparacio++;
+        }
+        for (int i = 0; i < num.length; i++) {
+
+            System.out.println(num[i]);
+
+        }
     }
-
 }
 
 
