@@ -70,7 +70,7 @@ public class Main {
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
 
-
+    }
 }
 
 
