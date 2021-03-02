@@ -1,6 +1,8 @@
 package com.Marian.Exercicis;
 
 import com.Marian.Exercicis.Classes.Employee.*;
+import com.Marian.Exercicis.ExercicisDeReforç.CondicionalsIBucles;
+import com.Marian.Exercicis.ExercicisDeReforç.VariablesICondicionals;
 import com.Marian.Exercicis.ExercicisP.TiposDeSorts;
 import com.Marian.Exercicis.Refactoritzar.Customer;
 import com.Marian.Exercicis.Refactoritzar.EliminarAssignacioParametre;
@@ -69,7 +71,7 @@ public class Main {
         //Engineer engineer = new Engineer("FR324R", "Pedro", 943856,1450);
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
-
+       CondicionalsIBucles.multipleIQuantitat();
     }
 }
 

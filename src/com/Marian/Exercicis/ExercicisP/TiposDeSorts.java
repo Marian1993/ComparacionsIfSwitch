@@ -69,7 +69,7 @@ public class TiposDeSorts {
              }
              for (int k = 0; k < num.length; k++) {
 
-                 if(num[k]>num[k+1]){
+                 if(num[k] > num[k+1]){
                      numAux = num[k + 1];
                      num[k + 1] = num[k];
                      num[k] = numAux;
