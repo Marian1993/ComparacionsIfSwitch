@@ -66,36 +66,49 @@ public class Main {
         //Engineer engineer = new Engineer("FR324R", "Pedro", 943856,1450);
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
-        /*int[] num = {5,3,1,4,2,9,12,8,10,6,13,7,11,8};
-
-        Arrays.sort(num);
-
-        for (int i = 0; i < num.length; i++) {
-
-            System.out.println(num[i]);
-        }*/
-
-
-        int[] num = {5,3,1,4,2,9,12,8,10,6,13,7,11};
+        /*int[] num = {5,3,1,4,2,9,8};
 
         int indexMesPetit = 0;
         int indexComparacio = 0;
+        int numAuxiliar = 0;
 
         for (int i = 0; i < num.length; i++) {
 
-            int numAuxiliar = 0;
-
-            for (int j = 0; j < num.length; j++) {
+            for (int j = indexComparacio; j < num.length; j++) {
 
                 if(num[indexMesPetit] > num[j]){
 
                     indexMesPetit = j;
                 }
             }
-            numAuxiliar = num[indexComparacio];
-            num[indexComparacio] = num[indexMesPetit];
-            num[indexMesPetit] = num[numAuxiliar];
-            indexComparacio++;
+                numAuxiliar = num[indexComparacio];
+                num[indexComparacio] = num[indexMesPetit];
+                num[indexMesPetit] = numAuxiliar;
+                indexComparacio++;
+                indexMesPetit = indexComparacio;
+
+            System.out.println(num[i]);
+        }*/
+
+
+        int[] num = {2,5,4,1,6,3};
+
+        int longitud = num.length;
+
+
+        for (int i = 0; i < num.length; i++) {
+            int numAuxiliar = 0;
+
+            for (int j = 0; j < longitud-1; j++) {
+
+                if(num[j] > num[j+1]){
+
+                    numAuxiliar = num[j+1];
+                    num[j+1] = num[j];
+                    num[j] = numAuxiliar;
+                }
+            }
+            longitud--;
         }
         for (int i = 0; i < num.length; i++) {
 
@@ -103,6 +116,8 @@ public class Main {
 
         }
     }
+
+
 }
 
 
