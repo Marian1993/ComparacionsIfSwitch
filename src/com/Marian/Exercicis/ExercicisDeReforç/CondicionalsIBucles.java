@@ -227,6 +227,66 @@ public class CondicionalsIBucles {
         System.out.println("La mitjana d'altura dels alumnes es: " + mitjanaAltura/quantitatAltura +", hi ha " +
                 mesDe175 + " alumnes que medeixen més de 175 cm.");
     }
+    public static void tualaMultiplicar(){
+
+        int num = sc.nextInt();;
+
+        for (int i = 0; i < 11; i++) {
+
+            System.out.println(num + " * " + i + " = " + num*i);
+        }
+    }
+    public static void qualificacioNotes(){
+
+        int suspesos = 0;
+        int be = 0;
+        int notables = 0;
+        int exelents = 0;
+
+        for (int i = 0; i < 11; i++) {
+
+            int notes = sc.nextInt();
+
+            switch (notes){
+
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    suspesos++;
+                    break;
+                case 5:
+                case 6:
+                    be++;
+                    break;
+                case 7:
+                case 8:
+                    notables++;
+                    break;
+                case 9:
+                case 10:
+                    exelents++;
+                    break;
+                default:
+                    System.out.println("No es pot posar més que un 10");
+            }
+        }
+        System.out.println("Suspesos: " + suspesos + "\nBens: " + be + "\nNotables: " + notables + "\nExel·lents: " + exelents);
+    }
+    public static void multipleTres(){
+
+        for (int i = 0; i < 5; i++) {
+
+            int num = sc.nextInt();
+
+            if (num % 3 == 0) {
+
+                System.out.println("El número " + num + " es multiple de 3");
+            }else {
+                System.out.println("El número " + num + " no es multiple de 3");
+            }
+        }
+    }
 
 
 }
