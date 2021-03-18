@@ -8,13 +8,7 @@ public class Humanitats extends Grau {
     }
 
     public double getPreu(double preuCredit) {
-        if (numCursos == 2) {
-            return numCursos * preuCredit * 20;
-        } else if (numCursos == 4) {
-            return numCursos * preuCredit * 15;
-        } else if (numCursos > 4) {
+
             return numCursos * preuCredit;
-        }
-        return 0;
     }
 }

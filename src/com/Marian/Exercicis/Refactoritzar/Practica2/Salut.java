@@ -7,6 +7,6 @@ public class Salut extends Grau{
         super(codi,grau,tipus,numCursos,assignatures);
     }
     public double getPreu(double preuCredit) {
-        return numCursos * preuCredit * 15;
+        return numCursos * preuCredit * 20;
     }
 }
