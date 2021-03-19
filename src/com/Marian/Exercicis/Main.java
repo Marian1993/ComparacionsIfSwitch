@@ -72,7 +72,8 @@ public class Main {
         //Engineer engineer = new Engineer("FR324R", "Pedro", 943856,1450);
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
-        Reforç2.taulaMultiplicar(4);
+        //Reforç2.contornCuadrat(10, 10);
+        System.out.println(Reforç2.numPrimer(4));
 
 
     }

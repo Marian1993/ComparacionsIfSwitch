@@ -227,11 +227,11 @@ public class CondicionalsIBucles {
         System.out.println("La mitjana d'altura dels alumnes es: " + mitjanaAltura/quantitatAltura +", hi ha " +
                 mesDe175 + " alumnes que medeixen més de 175 cm.");
     }
-    public static void tualaMultiplicar(){
+    public static void taulaMultiplicar(){
 
         int num = sc.nextInt();;
 
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i <= 10; i++) {
 
             System.out.println(num + " * " + i + " = " + num*i);
         }
