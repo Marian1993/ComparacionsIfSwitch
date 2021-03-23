@@ -1,5 +1,7 @@
 package com.Marian.Exercicis.ExercicisDeReforç;
 
+import java.util.ArrayList;
+
 public class Reforç2 {
 
     public static String retornarTemps(int segons){
@@ -80,6 +82,27 @@ public class Reforç2 {
             System.out.println();
         }
     }
+    public  static void contador (int num){
+
+        char [] arrayNum = Integer.toString(num).toCharArray();
+        String contador = "";
+
+
+        for (int i = 0; i < arrayNum.length; i++) {
+
+            if(arrayNum[i] == '3'){
+
+                arrayNum[i] = 'E';
+            }
+            contador += arrayNum[i];
+            if(i < arrayNum.length-1) {
+                contador += '-';
+            }
+
+        }
+        System.out.println(contador);
+
+    }
     public static String numPrimer(int num){
 
         int contador = 0;
@@ -96,6 +119,67 @@ public class Reforç2 {
             return "No es un número primer";
         }
     }
+    public static int quantitatNumPrimers(int maxim){
 
+        int quantitatPrimer = 0;
+
+        for (int i = 1; i < maxim; i++) {
+
+            int contador = 0;
+            for (int j = 1; j <= maxim; j++) {
+
+                if(i%j == 0){
+                    contador++;
+                }
+            }
+            if (contador == 2){
+                quantitatPrimer++;
+            }
+        }
+        return quantitatPrimer++;
+    }
+    public static void quantitatNumFibonacci(int maxim){
+
+        int num1 = 1;
+        int num2 = 0;
+        int resultat = 0;
+        ArrayList fibonacci = new ArrayList();
+        fibonacci.add(num1);
+
+
+        for (int i = 1; i < maxim; i++) {
+
+            resultat = num2 + num1;
+            num2 = num1;
+            num1 = resultat;
+
+            if(resultat < maxim){
+                fibonacci.add(resultat);
+            }
+        }
+        for (int i = 0; i < fibonacci.size(); i++) {
+
+            System.out.print(fibonacci.get(i) + " ");
+
+        }
+    }
+    public static boolean esFibonacci(int num){
+
+        int num1 = 1;
+        int num2 = 0;
+        int resultat = 0;
+
+        for (int i = 0; i < num; i++) {
+
+            resultat = num2 + num1;
+            num2 = num1;
+            num1 = resultat;
+
+            if(resultat == num){
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
