@@ -3,6 +3,7 @@ package com.Marian.Exercicis;
 import com.Marian.Exercicis.Classes.Employee.*;
 import com.Marian.Exercicis.ExercicisDeReforç.CondicionalsIBucles;
 import com.Marian.Exercicis.ExercicisDeReforç.Reforç2;
+import com.Marian.Exercicis.ExercicisDeReforç.ReforçArrays;
 import com.Marian.Exercicis.ExercicisDeReforç.VariablesICondicionals;
 import com.Marian.Exercicis.ExercicisP.TiposDeSorts;
 import com.Marian.Exercicis.Refactoritzar.Customer;
@@ -72,8 +73,8 @@ public class Main {
         //Engineer engineer = new Engineer("FR324R", "Pedro", 943856,1450);
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
-        Reforç2.contador(234);
-
+        //ReforçArrays.retornarNumeros();
+        System.out.println(Arrays.toString(ReforçArrays.juntarArrays()));
     }
 }
 
