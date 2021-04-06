@@ -115,27 +115,34 @@ public class ReforçArrays {
     }
     public static int[] juntarArraysDiferent(int num){
         int [] primerArray = new int [] {2,3,4,5};
-        int [] segonArray = new int[] {6,7,8,9,4,6,7};
+        int [] segonArray = new int[] {6,7,8,8,9,0,6};
         int posicio = 0;
+        int auxJ = 0;
+        int numAux = 0;
 
         int [] arrayFinal = new int[primerArray.length + segonArray.length];
 
         for (int i = 0; i < primerArray.length; i++) {
-            int numAux = 0;
             arrayFinal[posicio] = primerArray[i];
             posicio++;
+            numAux++;
 
-            if(numAux == num) {
-                if (!(i > segonArray.length)) {
-                    for (int j = i; j < segonArray.length; j++) {
+            if(numAux == num || i == primerArray.length-1){
+                numAux = 0;
+
+                for (int j = auxJ; j < segonArray.length; j++) {
+
+                    arrayFinal[posicio] = segonArray[j];
+                    posicio++;
+                    auxJ++;
+                    numAux++;
+
+                    if(numAux == num && !(i == primerArray.length-1)) {
                         numAux = 0;
-                        arrayFinal[posicio] = segonArray[j];
-                        posicio++;
-                        if(numAux == num) {
-                            break;
-                        }
+                        break;
                     }
                 }
+
             }
         }
         return arrayFinal;

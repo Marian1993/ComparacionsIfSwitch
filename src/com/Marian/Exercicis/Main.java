@@ -74,7 +74,7 @@ public class Main {
         //Administrador administrador = new Administrador("HY43S", "Laura", 873462,1100);
 
         //ReforçArrays.retornarNumeros();
-        System.out.println(Arrays.toString(ReforçArrays.juntarArrays()));
+        System.out.println(Arrays.toString(ReforçArrays.juntarArraysDiferent(3)));
     }
 }
 
