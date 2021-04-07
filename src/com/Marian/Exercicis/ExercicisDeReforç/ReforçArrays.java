@@ -147,4 +147,133 @@ public class ReforçArrays {
         }
         return arrayFinal;
     }
+    public static void inserirNumeroArray(int [] array, int element, int index){
+
+        int [] arrayAux = new int[array.length+1];
+        int indexAux = 0;
+
+        if ( index <= arrayAux.length){
+
+            for (int i = 0; i < arrayAux.length; i++) {
+
+                if(i == index){
+                    arrayAux[i] = element;
+                }else {
+                    arrayAux[i] = array[indexAux];
+                    indexAux++;
+                }
+            }
+            for (int i = 0; i < arrayAux.length; i++) {
+
+                System.out.println(arrayAux[i]);
+
+            }
+        }
+    }
+    public static void inserirNumeroArray2(int [] array, int element, int index){
+
+        int guardar = 0;
+        int auxGuardar = 0;
+        boolean fet = false;
+        int[] arrayAux = new int[array.length+1];
+
+        if(index <= arrayAux.length) {
+
+
+            for (int i = 0; i < array.length; i++) {
+                arrayAux[i] = array[i];
+            }
+
+            for (int i = 0; i < arrayAux.length; i++) {
+
+                if (fet) {
+                    auxGuardar = arrayAux[i];
+                    arrayAux[i] = guardar;
+                    guardar = auxGuardar;
+                }
+                if (i == index) {
+                    guardar = arrayAux[i];
+                    arrayAux[i] = element;
+                    fet = true;
+                }
+            }
+            for (int i = 0; i < arrayAux.length; i++) {
+
+                System.out.println(arrayAux[i]);
+            }
+        }
+    }
+    public static void insereixenOrdre(int[] array, int element){
+
+        int[] arrayAux = new int[array.length+1];
+        int guardar = 0;
+        int auxGuardar = 0;
+        boolean fet = false;
+
+        for (int i = 0; i < array.length; i++) {
+            arrayAux[i] = array[i];
+        }
+        for (int i = 0; i < arrayAux.length; i++) {
+
+            if (fet){
+                auxGuardar = arrayAux[i];
+                arrayAux[i] = guardar;
+                guardar = auxGuardar;
+            }
+            if( !(i == arrayAux.length-1) && element < arrayAux[i] && !(fet)){
+                guardar = arrayAux[i];
+                arrayAux[i] = element;
+                fet =  true;
+            }
+        }
+        for (int i = 0; i < arrayAux.length; i++) {
+            System.out.println(arrayAux[i]);
+
+        }
+    }
+    public static void eliminarIndexArray(int[] array, int index){
+
+        int[] arrayAux = array;
+        boolean fet = false;
+
+        for (int i = 0; i < arrayAux.length; i++) {
+
+            if (fet) {
+                arrayAux[i-1] = arrayAux[i];
+            }
+            if(i == index){
+                fet = true;
+            }
+        }
+        int[] arrayAcabada = new int[arrayAux.length-1];
+
+        for (int i = 0; i < arrayAcabada.length; i++) {
+            arrayAcabada[i] = arrayAux[i];
+            System.out.println(arrayAcabada[i]);
+        }
+    }
+    public static void separarArray(int [] array){
+
+        int par = 0;
+        int impar = 0;
+        int[] arrayPar = new int[par];
+        int[] arratImpar = new int[impar];
+
+        for (int i = 0; i < array.length; i++) {
+
+            if(array[i]%2 == 0){
+                par++;
+            }else {
+                impar++;
+            }
+        }
+        for (int i = 0; i < array.length; i++) {
+
+            if(array[i]%2 == 0){
+                par++;
+            }else {
+                impar++;
+            }
+        }
+    }
 }
