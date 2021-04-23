@@ -2,6 +2,7 @@ package com.Marian.Exercicis.ExercicisDeReforç;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.SortedMap;
 
 public class ReforçArrays {
 
@@ -255,25 +256,71 @@ public class ReforçArrays {
     public static void separarArray(int [] array){
 
         int par = 0;
+        int contadorPar = 0;
         int impar = 0;
+        int contadorImpar = 0;
+
+        for (int i = 0; i < array.length; i++) {
+
+            if(array[i]%2 == 0){
+                par++;
+
+            }else {
+                impar++;
+            }
+        }
+
         int[] arrayPar = new int[par];
         int[] arratImpar = new int[impar];
 
         for (int i = 0; i < array.length; i++) {
 
             if(array[i]%2 == 0){
-                par++;
+                arrayPar[contadorPar] =array[i];
+                contadorPar++;
             }else {
-                impar++;
+                arratImpar[contadorImpar] = array[i];
+                contadorImpar++;
             }
         }
-        for (int i = 0; i < array.length; i++) {
+        System.out.println("Pars");
+        for (int i = 0; i < arrayPar.length; i++) {
+            System.out.print(arrayPar[i]+ " ");
+        }
+        System.out.println();
+        System.out.println("Impars");
+        for (int i = 0; i < arratImpar.length; i++) {
+            System.out.print(arratImpar[i] + " ");
 
-            if(array[i]%2 == 0){
-                par++;
-            }else {
-                impar++;
+        }
+    }
+    public static void retornarArrayOrdenat(int [] array1, int [] array2){
+
+        int [] arrayOrdenat = new int[array1.length + array2.length];
+        int index = 0;
+
+        for (int i = 0; i < arrayOrdenat.length; i +=2) {
+
+            arrayOrdenat[i] = array1[index];
+            arrayOrdenat[i+1] = array2[index];
+            index++;
+        }
+        for (int i = 0; i < arrayOrdenat.length; i++) {
+            int numAux = 0;
+
+            for (int j = 0; j < arrayOrdenat.length-1; j++) {
+
+                if(arrayOrdenat[j] > arrayOrdenat[j+1]){
+                    numAux = arrayOrdenat[j];
+                    arrayOrdenat[j] = arrayOrdenat[j+1];
+                    arrayOrdenat[j+1] =numAux;
+
+                }
             }
+        }
+        for (int i = 0; i < arrayOrdenat.length; i++) {
+            System.out.println(arrayOrdenat[i]);
+
         }
     }
 }
