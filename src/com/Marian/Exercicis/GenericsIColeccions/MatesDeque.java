@@ -16,15 +16,18 @@ public class MatesDeque {
 
          }else if(calcul.charAt(i) == ')'){
 
-             if(dq.getFirst().charAt(0) == '(') {
-                 dq.removeFirst();
-             }else {
+             if(dq.size()  == 1) {
 
+                 if(dq.getFirst().charAt(0) == '('){
+
+                     dq.removeFirst();
+                 }
+             }else{
+                 return false;
              }
          }
      }
      if (dq.size() == 0){
-
          return true;
      }else {
          return false;
