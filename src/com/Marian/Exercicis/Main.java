@@ -6,6 +6,7 @@ import com.Marian.Exercicis.ExercicisDeReforç.Reforç2;
 import com.Marian.Exercicis.ExercicisDeReforç.ReforçArrays;
 import com.Marian.Exercicis.ExercicisDeReforç.VariablesICondicionals;
 import com.Marian.Exercicis.ExercicisP.TiposDeSorts;
+import com.Marian.Exercicis.GenericsIColeccions.MatesDeque;
 import com.Marian.Exercicis.Refactoritzar.Customer;
 import com.Marian.Exercicis.Refactoritzar.EliminarAssignacioParametre;
 
@@ -78,7 +79,13 @@ public class Main {
 
         int [] array = new int[]{1,2,2,3,4};
 
-        ReforçArrays.eliminarIndexArray(array,1);
+        //ReforçArrays.eliminarIndexArray(array,1);
+
+        String calcul = "(2*5)0+9)";
+
+        MatesDeque problem = new MatesDeque();
+
+        System.out.println(problem.calculCorrecte(calcul));
     }
 }
 
