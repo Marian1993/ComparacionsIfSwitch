@@ -8,6 +8,7 @@ public class TendaHashMap {
     HashMap<String,String> roba = new HashMap<String,String>();
     HashMap<String,Integer> stock =  new HashMap<String,Integer>();
 
+
     public void afeguirPrenda(String clau, String prenda){
 
         roba.put(clau,prenda);
@@ -58,6 +59,13 @@ public class TendaHashMap {
         for (Map.Entry r: roba.entrySet()) {
 
             System.out.println("Clau: " + r.getKey() + " Valor: " + r.getValue());
+        }
+    }
+    private void crearStock(){
+
+        for (int i = 0; i < roba.size(); i++) {
+
+
         }
     }
     public String quantitatStock() {
