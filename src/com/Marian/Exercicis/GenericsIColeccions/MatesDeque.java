@@ -18,12 +18,12 @@ public class MatesDeque {
 
              if(dq.size()  == 1) {
 
-                 if(dq.getFirst().charAt(0) == '('){
+                 if (dq.getFirst().charAt(0) == '(') {
 
                      dq.removeFirst();
                  }
              }else{
-                 return false;
+                 dq.add(")");
              }
          }
      }
