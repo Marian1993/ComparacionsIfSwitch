@@ -5,9 +5,9 @@ import java.util.Deque;
 
 public class MatesDeque {
 
- Deque<String> dq = new ArrayDeque<String>();
+    Deque<String> dq = new ArrayDeque<String>();
 
- public boolean calculCorrecte(String calcul){
+    public boolean calculCorrecte(String calcul){
 
      for (int i = 0; i < calcul.length(); i++) {
 
@@ -16,22 +16,16 @@ public class MatesDeque {
 
          }else if(calcul.charAt(i) == ')'){
 
-             if(dq.size()  == 1) {
+             if(dq.isEmpty()) {
+                 return false;
 
-                 if (dq.getFirst().charAt(0) == '(') {
-
-                     dq.removeFirst();
-                 }
              }else{
-                 dq.add(")");
+                 dq.pop();
              }
          }
      }
-     if (dq.size() == 0){
-         return true;
-     }else {
-         return false;
-     }
+     return dq.isEmpty();
+    }
  }
 
-}
+
