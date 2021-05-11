@@ -60,8 +60,9 @@ public class RegisterIO {
 
         if(f.getFilePointer() % ALUMNE == 0){
 
-            f.seek();
+
         }
+        return 2;
     }
 
 
